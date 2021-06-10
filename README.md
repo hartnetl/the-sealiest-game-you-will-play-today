@@ -1,59 +1,211 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# My game title
 
-Welcome USER_NAME,
+## 1 Introduction
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+***
 
-## Gitpod Reminders
+Live site: [Name of the page](the live link)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Project Aim: Use vanilla JavaScript to build a text adventure game
 
-`python3 -m http.server`
+A brief introduction to the site 
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+1. [Introduction](#1-introduction)
+2. [UXD User Experience Design](#2-uxd-user-experience-design)
+    - [2.1 Strategy](#21-strategy)
+    - [2.2 Scope](#22-scope)
+    - [2.3 Structure](#23-structure)
+    - [2.4 Skeleton](#24-skeleton)
+    - [2.5 Surface](#25-surface)
+3. [Features](#3-Features)
+    - [3.1 Exisiting](#31-existing-features)
+    - [3.2 Future](#32-future-features)
+4. [Technologies Used](#4-technologies-and-resources-used)
+5. [Testing](#5-testing)
+    - [5.1 Validation](#51-validator-tests)
+    - [5.2 Accessibility](#52-accessibility-test)
+    - [5.3 Performance](#53-performance-test)
+    - [5.4 Manual](#54-manual-testing)
+6. [Bugs](#6-bugs)
+7. [Deployment](#7-deployment)
+8. [Credits](#8-credits)
+9. [Acknowledgements](#9-acknowledgements)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## 2 UXD User experience Design
 
-Another blue button should appear to click: _Open Browser_.
+***
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Broad overview - who is this page / site / game aimed towards
 
-To log into the Heroku toolbelt CLI:
+### 2.1 Strategy
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### User Goals
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+What do users want to gain by using this site 
 
-## Updates Since The Instructional Video
+#### Project goals
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+What do I hope to gain by making and sharing this game
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### User Stories
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Users want to ....
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- The owners want to ...
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### 2.2 Scope
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The aim of this project was.....
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The features to include:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- a list
+- of features
+- I hope to include
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### 2.3 Structure
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+What will this look like
 
----
+### 2.4 Skeleton
 
-Happy coding!
+What is the structure + layout going to be. Include wireframes.
+
+#### Deviations from wireframe
+
+If you stray from the wireframe, justify it here
+
+### 2.5 Surface
+
+#### Aesthetic
+
+
+
+#### Colours
+
+
+
+#### Fonts
+
+
+
+#### Imagery
+
+
+
+## 3 Features
+
+***
+
+### 3.1 Existing Features
+
+- Connect user stories to screenshots of site
+
+### 3.2 Future Features
+
+Things I would like to add in the future
+
+## 4 Technologies and Resources Used
+
+***
+
+### Languages
+
+[HTML](https://html.com/): HyperText Markup Language. It is the language used as the basis of building websites and provides the main structure and format to the site.
+
+[CSS](https://www.w3.org/Style/CSS/Overview.en.html): Cascading Style Sheets. It's the language used to make the web elements look better. It adds colour, positioning, fonts etc.
+
+[JavaScript][https://www.w3schools.com/js/]: JavaScript is needed to control a web page's behaviour and adds more interaction for the user. 
+
+This project uses vanilla JavaScript, meaning no external frameworks have been used.
+
+### Programmes and Libraries Used
+
+- [Balsamiq](https://balsamiq.com/tutorials/) - used to build framework.
+- [Chrome devtools](https://developer.chrome.com/docs/devtools/) used for finding quick solutions to design issues and visualising the site on different screen sizes for making media queries.
+- [Font Awesome](https://fontawesome.com/) used to source social media icons
+- [Git](https://git-scm.com/) used for version control of my site and pushing code to GitHub
+- [GitHub](https://github.com/) is the cloud storage system for my projects. The location of this site's repository, and place to deploy site.
+- [GitPod](https://gitpod.io/) is the IDE used to write and preview the code for this website.
+- [TinyJPG](https://tinypng.com/) is the site used to compress images used without compromising the quality.
+
+
+### Resources for code
+
+As a beginner, my project was mostly designed using code provided in the Code Institute lessons and example projects.
+I also used many youtube tutorials for designing quizzes and text based adventure games.
+I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https://stackoverflow.com/) and [CSS tricks](https://css-tricks.com/) for general hints. 
+
+## 5 Testing
+
+***
+
+### 5.1 Validator Tests
+
+- HTML was validated using [W3C markup validator](https://validator.w3.org/).  
+
+
+- CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/).  
+
+
+### 5.2 Accessibility test
+
+- Accessibility of the site was tested with [WAVE(Web Accessibility Evaluation Tool)](https://wave.webaim.org/).  
+
+
+### 5.3 Performance test
+
+- Performance was tested with [lighthouse](https://developers.google.com/web/tools/lighthouse/run) and [webpage test](https://www.webpagetest.org/) 
+
+### 5.4 Manual testing
+
+The live link was sent to multiple people for feedback on ...
+
+#### Features on each page
+
+## 6 Bugs
+
+***
+
+## Fixed / solved
+
+## Still exisiting
+
+## Issues Faced
+
+## 7 Deployment
+
+***
+
+- Sign in to the [GitHub](https://github.com/) website. Go to list of repositories.
+- In the github repository section find "ENTER REPO NAME HERE"
+- Go to the settings tab located in the menu running across the top of the repository, denoted by a cog icon.
+- Click 'Pages' in the navbar on the left.
+- Swap source branch from none to master
+- Press the save button
+- Wait a few minutes while your page is being built.
+- A highlighted banner should be displayed on the page saying "Your site is published at ... " with a tick icon to the left of it.
+- The site is now live.
+
+The deployed site: 
+
+## 8 Credits
+
+***
+
+### Content
+
+
+
+### Images
+
+
+
+### Code for things I didn't know how to do
+
+
+
+## 9 Acknowledgements
+
