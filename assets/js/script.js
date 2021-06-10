@@ -9,12 +9,15 @@ function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
     console.log("you want to run the game")
+    displayScenarioX('intro');
 };
 
 function displayScenarioX() {
     // This function needs to control what scenario to display
     // And the associated options
-    console.log("you want to display the scenario text")
+    if (scenarios[0].id ==="intro") {
+        scenarioText = scenarios[0].message;
+    }
 };
 
 function optionResponse() {
@@ -23,3 +26,22 @@ function optionResponse() {
 };
 
 
+// Create an array to hold all of the scenarios as objects
+
+let scenarios = [
+    {
+        id: "intro",
+        message: "This is the introduction message", 
+        response: [
+            {option1: "Take me to the zoo!"},
+        ],
+    },
+    {
+        id: "1",
+        message: "Welcome to the first scenario",
+        response: [
+            {option1: "I want to do this option"},
+            {option2: "I'm brave and wanna pick this option"},
+        ],
+    },
+];
