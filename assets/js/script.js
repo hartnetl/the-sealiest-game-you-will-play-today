@@ -8,7 +8,7 @@ let optionButtons = document.getElementById('buttons-container');
 function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
-    displayText(1)
+    displayText('intro')
 };
 
 
@@ -50,7 +50,7 @@ function optionResponse(respond) {
 
 let scenarios = [
     {
-        id: 1,
+        id: 'intro',
         message: "This is the introduction message", 
         response: [
             {option: "Take me to the zoo!",
@@ -58,11 +58,38 @@ let scenarios = [
         ],
     },
     {
-        id: 2,
+        id: 1,
         message: "Welcome to the first scenario",
+        response: [
+            {option: "I want to do this option",
+        goTo: 2},
+            {option: "I'm brave and wanna pick this option",
+        goTo: 3},
+        ],
+    },
+    {
+        id: 2,
+        message: "Welcome to the second scenario",
+        response: [
+            {option: "I want to do this option",
+        goTo: 'final'},
+            {option: "I'm brave and wanna pick this option"},
+        ],
+    },
+    {
+        id: 3,
+        message: "Welcome to the other second scenario",
         response: [
             {option: "I want to do this option"},
             {option: "I'm brave and wanna pick this option"},
+        ],
+    },
+    {
+        id: 'final',
+        message: "congratulations, you survived your day at the zoo!",
+        response: [
+            {option: "Let's play again",
+        goTo: "intro"},
         ],
     },
 ];
