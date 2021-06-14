@@ -41,10 +41,9 @@ function displayText (scenarioIndex) {
         })
     };
 
-
-function optionResponse() {
+function optionResponse(respond) {
     // This function implements response based on the option you choose
-    console.log("you picked option X and so the following things must happen")
+    displayText(respond.goTo)
 };
 
 // Create an array to hold all of the scenarios as objects containing the body text and option text
@@ -54,7 +53,8 @@ let scenarios = [
         id: 1,
         message: "This is the introduction message", 
         response: [
-            {option: "Take me to the zoo!"},
+            {option: "Take me to the zoo!",
+            goTo: 2},
         ],
     },
     {
