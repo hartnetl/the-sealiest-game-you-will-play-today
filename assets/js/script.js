@@ -1,15 +1,17 @@
 // Assign variables to be able to target textbox and option button text
 
-let scenarioText = document.getElementsByTagName('p');
+let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
 
 // Create funtion to start the game
 
+
+
+
 function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
-    console.log("you want to run the game")
-    displayScenarioX('intro');
+    scenarioText.textContent = scenarios[0].message;
 };
 
 function displayScenarioX() {
@@ -25,6 +27,11 @@ function optionResponse() {
     console.log("you picked option X and so the following things must happen")
 };
 
+// function displayText () {
+//     scenarioText.textContent = this.message;
+// }
+
+// displayText(scenarios[0]);
 
 // Create an array to hold all of the scenarios as objects
 
@@ -45,3 +52,5 @@ let scenarios = [
         ],
     },
 ];
+
+runGame();
