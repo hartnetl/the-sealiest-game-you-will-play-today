@@ -26,7 +26,14 @@ h1 {
     margin: 3% auto;
 }
 
-/* #scores {
-    display: flex;
-    flex-direction: row;
-} */
+#scores {
+    margin: 0 6.25vw;
+    border: 1px solid black;
+    width: 85vw;
+    position: absolute;
+    bottom: 5%;
+}
+
+.count {
+    margin-left: 15%;
+}
