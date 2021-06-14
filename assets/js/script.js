@@ -46,6 +46,16 @@ function optionResponse(respond) {
     displayText(respond.goTo)
 };
 
+let oldWin = parseInt(document.getElementById('win').innerText);
+function addWin() {
+    // A function to increase number of times user made it to the end
+    document.getElementById('win').innerText = ++oldWin;
+}
+
+function addLoss() {
+    // A function to increase the number of times user lost and had to start again
+}
+
 // Create an array to hold all of the scenarios as objects containing the body text and option text
 
 let scenarios = [
@@ -95,3 +105,4 @@ let scenarios = [
 ];
 
 runGame();
+
