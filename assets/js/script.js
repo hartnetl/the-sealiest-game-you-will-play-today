@@ -1,7 +1,10 @@
-// Assign variables to be able to target textbox and option button text
+ // Assign variables to be able to target textbox and option button text
 
 let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
+
+let oldWin = parseInt(document.getElementById('win').innerText);
+let oldLoss = parseInt(document.getElementById('lose').innerText);
 
 // Create funtion to start the game
 
@@ -11,6 +14,15 @@ function runGame() {
     displayText('intro')
 };
 
+function incrementScore() {
+    if (scenarios.outcome = "win") {
+        addWin();
+    } else if (scenarios.outcome = "lose") {
+        addLoss();
+    } 
+}
+   
+// }
 
 // function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
@@ -46,7 +58,7 @@ function optionResponse(respond) {
     displayText(respond.goTo)
 };
 
-let oldWin = parseInt(document.getElementById('win').innerText);
+
 function addWin() {
     // A function to increase number of times user made it to the end
     document.getElementById('win').innerText = ++oldWin;
@@ -54,55 +66,9 @@ function addWin() {
 
 function addLoss() {
     // A function to increase the number of times user lost and had to start again
+    document.getElementById('lose').innerText = ++oldLoss;
 }
 
-// Create an array to hold all of the scenarios as objects containing the body text and option text
-
-let scenarios = [
-    {
-        id: 'intro',
-        message: "This is the introduction message", 
-        response: [
-            {option: "Take me to the zoo!",
-            goTo: 2},
-        ],
-    },
-    {
-        id: 1,
-        message: "Welcome to the first scenario",
-        response: [
-            {option: "I want to do this option",
-        goTo: 2},
-            {option: "I'm brave and wanna pick this option",
-        goTo: 3},
-        ],
-    },
-    {
-        id: 2,
-        message: "Welcome to the second scenario",
-        response: [
-            {option: "I want to do this option",
-        goTo: 'final'},
-            {option: "I'm brave and wanna pick this option"},
-        ],
-    },
-    {
-        id: 3,
-        message: "Welcome to the other second scenario",
-        response: [
-            {option: "I want to do this option"},
-            {option: "I'm brave and wanna pick this option"},
-        ],
-    },
-    {
-        id: 'final',
-        message: "congratulations, you survived your day at the zoo!",
-        response: [
-            {option: "Let's play again",
-        goTo: "intro"},
-        ],
-    },
-];
 
 runGame();
 
