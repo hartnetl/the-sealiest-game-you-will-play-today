@@ -13,9 +13,10 @@ function runGame() {
     // One option button needs to display with text "Take me to the zoo"
     displayText('intro')
 
-    if (scenarios.response.outcome === "win") {
+    let scorey = scenarios.find(scorey => scorey.outcome)
+    if (scorey.outcome === "win") {
         addWin();
-    } else if (scenarios.response.outcome === "lose") {
+    } else if (scorey.outcome === "lose") {
         addLoss();
     }
 };
