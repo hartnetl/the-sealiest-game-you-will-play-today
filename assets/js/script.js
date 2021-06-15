@@ -13,16 +13,13 @@ function runGame() {
     // One option button needs to display with text "Take me to the zoo"
     displayText('intro')
 
-    if (scenarios.outcome = "win") {
+    if (scenarios.response.outcome === "win") {
         addWin();
-    } else if (scenarios.outcome = "lose") {
+    } else if (scenarios.response.outcome === "lose") {
         addLoss();
+    }
 };
 
-function incrementScore() {
-   
-    } 
-}
 
 // function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
