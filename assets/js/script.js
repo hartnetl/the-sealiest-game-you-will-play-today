@@ -12,13 +12,6 @@ function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
     displayText('intro')
-
-    let scorey = scenarios.find(scorey => scorey.outcome)
-    if (scorey.outcome === "win") {
-        addWin();
-    } else if (scorey.outcome === "lose") {
-        addLoss();
-    }
 };
 
 
@@ -50,10 +43,21 @@ function displayText (scenarioIndex) {
             optionButtons.appendChild(optionButton)
         })
     };
-
+    // Check if object contains outcome >>>> If no outcome, go to next >>>> If outcome check outcome >>> If win, increment score / if lose decrement score
 function optionResponse(respond) {
+    if (respond.outcome == null) {
+        displayText(respond.goTo);
+    } else if (respond.outcome == "win") {
+        addWin();
+        displayText(respond.goTo);
+    } else if (respond.outcome == "lose") {
+        addLoss();
+        displayText(respond.goTo);
+    }
+
     // This function implements response based on the option you choose
-    displayText(respond.goTo)
+
+    
 };
 
 function addWin() {
