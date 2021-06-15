@@ -84,7 +84,7 @@ let scenarios = [
     },
     {
         id: 1,
-        message: `You get to the zoo and the queue to get in is really long. <br> Do you:`,
+        message: `You get to the zoo and the queue to get in is really long. Do you:`,
         response: [
             {
                 option: "Wait in line",
@@ -98,26 +98,212 @@ let scenarios = [
     },
     {
         id: 2,
-        message: "Welcome to the your end",
+        message: "You waited patiently in the queue for 30 minutes and your finally get it. First stop - the penguin feeding! While you're there the zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
-                option: "I need to start again",
-                outcome: "lose",
+                option: "Take the penguin while no one is looking.",
+                goTo: 4
+            },
+            {
+                option: "Give the penguin a quick oat for encouragement. He belongs with the other penguins.",
+                goTo: 5
+            }
+        ],
+    },
+    {
+        id: 3,
+        message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
+        response: [
+            {
+                option: "Take the penguin while no one is looking.",
+                goTo: 4
+            },
+            {
+                option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
+                goTo: 5
+            }
+        ],
+    },
+    {
+        id: 4,
+        message: "Uh oh! As you were putting the penguin into your bag he cried out. The zookeeper hears and catches you. The police have been called. your days of crime are over.",
+        response: [
+            {
+                option: "Let's try that again..",
+                outcome: 'lose',
                 goTo: 'intro'
             },
         ],
     },
     {
-        id: 'final',
-        message: "congratulations, you survived your day at the zoo!",
+        id: 5,
+        message: "Feeling mroe confident, the penguin waddles over to the rest of the group to get some fish. You go little penguin! Feeling good about yourself you go to the next enclosure. There's a sea lion show and they need a volunteer...",
         response: [
             {
-                option: "Let's play again",
-                outcome: "win",
-                goTo: "intro"
+                option: "Pick me! Pick me!",
+                goTo: 6
+            },
+            {
+                option: "Better give one of these kids a chance to do it.",
+                goTo: 7
+            }
+        ],
+    },
+    {
+        id: 6,
+        message: "You get chosen, but you get knocked into the water and cannot swim. The sea lions think you're playing a game. You swallow a lot of water before being pulled out. Off to the hosptial you go.",
+        response: [
+            {
+                option: "I'm better now. Let's try again.",
+                outcome: 'lose',
+                goTo: 'intro'
             },
         ],
     },
+    {
+        id: 7,
+        message: "A kid gets chosen as the volunteer and performs some cool tricks with the sea lions. Man that looks cool. That should have been you. Being the mature person you are, you move on to the next enclosure with minimal sulking. You arrive at the gorillas. A huge silverback is patrolling near where you are.",
+        response: [
+            {
+                option: "Show that gorilla who's boss! Beat your chest at him.",
+                goTo: 8
+            },
+            {
+                option: "Watching gorillas is hungry work. Let's eat while we watch.",
+                goTo: 9
+            }
+        ],
+    },
+    {
+        id: 8,
+        message: "Turns out beating your chest at a gorilla make him mad. Who knew huh? The gorilla charges at the glass, baing on it loudly. You get a fright and stumble backwards. You fall, hitting your head. Everything fades to black... ",
+        response: [
+            {
+                option: "Lesson learned. Leave the gorrilas be. Let's try again.",
+                outcome: 'lose',
+                goTo: 'intro',
+            },
+        ],
+    },
+    {
+        id: 9,
+        message: "As you take your first bite you feel a hand on your shoulder. They warn you against eating in front of the gorillas. You decide to follow this persons advice, and you and your new friend wander over to the snapping turtle enclosure. They dare you to touch one: ",
+        response: [
+            {
+                option: "No way! That seems like a bad idea.",
+                goTo: 10,
+            },
+            {
+                option: "You're not one to shy away from a challenge. Let's pet that weirdly adorable little head.",
+                goTo: 11,
+            }
+        ],
+    },
+    {
+        id: 10,
+        message: "Your friend thinks you're lame now. They leave. Feeling sad you go to the cafe to get some ice cream. All they have is pistachio but you have a severe nut allergy. Do you risk it?",
+        response: [
+            {
+                option: "Pass! Not worth the risk. I'll go find some pandas instead.",
+                goTo: 12,
+            },
+            {
+                option: "No pain no gain! I want ice cream!",
+                goTo: 13,
+            }
+        ],
+    },
+    {
+        id: 11,
+        message: "Turns out they're called snapping turtles for a reason! You reach out to touch them, but they smell the food on your hands and snap at you, grabbing your hand. They swarm and all snap at you. You escape with your life. But not your hand.",
+        response: [
+            {
+                option: "I want my hand back! Let's restart.",
+                outcome: 'lose',
+                goTo: 'intro',
+            },
+        ],
+    },
+    {
+        id: 12,
+        message: "There's something very relaxing about the pandas. So chill. Much noms. They're almost hypnotic....",
+        response: [
+            {
+                option: "Better go get some coffee to snap out of this.",
+                goTo: 14,
+            },
+            {
+                option: "This is so relaxing... One more.. minute... zZzZzZ",
+                goTo: 15,
+            }
+        ],
+    },
+    {
+        id: 13,
+        message: "Well that was foolish. You had an allergic reaction and got rushed to hospital. What else did you expect?!",
+        response: [
+            {
+                option: "Let's pretend that didn't happen",
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 14,
+        message: "You get your coffee and use this new found energy to visit the rest of the animals. Feeling confident from the caffeine boost you ask to hold the tarantula after she was fed.",
+        response: [
+            {
+                option: "You purposely make her angry while you hold her. You want to be bitten to become the next Spiderman.",
+                goTo: 16,
+            },
+            {
+                option: "You stay absolutly still, watching with fascination while she crawls around you.",
+                goTo: 17,
+            }
+        ],
+    },
+    {
+        id: 16,
+        message: "The good news is you succeeded in making her mad and she bit you. The bad news is you did not get superpowers or spidey senses, and the reptile keeper just kicked you out.",
+        response: [
+            {
+                option: "One day a spiderbite will give you powers. Until then, back to the start you go.",
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 3,
+        message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
+        response: [
+            {
+                option: "Take the penguin while no one is looking.",
+                goTo: 4
+            },
+            {
+                option: "Give the penguin a quick oat for encouragement. He belongs with the other penguins.",
+                goTo: 5
+            }
+        ],
+    },
+    {
+        id: 3,
+        message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
+        response: [
+            {
+                option: "Take the penguin while no one is looking.",
+                goTo: 4
+            },
+            {
+                option: "Give the penguin a quick oat for encouragement. He belongs with the other penguins.",
+                goTo: 5
+            }
+        ],
+    },
+
+
+    
+    
 ];
 
 runGame();
