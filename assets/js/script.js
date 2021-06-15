@@ -12,17 +12,17 @@ function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
     displayText('intro')
-};
 
-function incrementScore() {
     if (scenarios.outcome = "win") {
         addWin();
     } else if (scenarios.outcome = "lose") {
         addLoss();
+};
+
+function incrementScore() {
+   
     } 
 }
-   
-// }
 
 // function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
@@ -57,7 +57,6 @@ function optionResponse(respond) {
     // This function implements response based on the option you choose
     displayText(respond.goTo)
 };
-
 
 function addWin() {
     // A function to increase number of times user made it to the end
@@ -442,7 +441,6 @@ let scenarios = [
             },
         ],
     },
-   
 ];
 
 runGame();
