@@ -6,6 +6,9 @@ let optionButtons = document.getElementById('buttons-container');
 let oldWin = parseInt(document.getElementById('win').innerText);
 let oldLoss = parseInt(document.getElementById('lose').innerText);
 
+// let penguin = new Audio('penguins.mp3');
+
+
 // Create funtion to start the game
 
 function runGame() {
@@ -15,7 +18,7 @@ function runGame() {
 };
 
 
-// function learned from "Web Dev Simplified" on youtube
+// This function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
 
 function displayText (scenarioIndex) {
@@ -43,8 +46,10 @@ function displayText (scenarioIndex) {
             optionButtons.appendChild(optionButton)
         })
     };
-    // Check if object contains outcome >>>> If no outcome, go to next >>>> If outcome check outcome >>> If win, increment score / if lose decrement score
+
+// Check if option has an outcome, and respond accordingly
 function optionResponse(respond) {
+
     if (respond.outcome == null) {
         displayText(respond.goTo);
     } else if (respond.outcome == "win") {
@@ -54,10 +59,6 @@ function optionResponse(respond) {
         addLoss();
         displayText(respond.goTo);
     }
-
-    // This function implements response based on the option you choose
-
-    
 };
 
 function addWin() {
@@ -99,6 +100,7 @@ let scenarios = [
     },
     {
         id: 2,
+        // audio: penguin,
         message: "You waited patiently in the queue for 30 minutes and your finally get it. First stop - the penguin feeding! While you're there the zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
@@ -106,7 +108,7 @@ let scenarios = [
                 goTo: 4
             },
             {
-                option: "Give the penguin a quick oat for encouragement. He belongs with the other penguins.",
+                option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
                 goTo: 5
             }
         ],
@@ -138,7 +140,7 @@ let scenarios = [
     },
     {
         id: 5,
-        message: "Feeling mroe confident, the penguin waddles over to the rest of the group to get some fish. You go little penguin! Feeling good about yourself you go to the next enclosure. There's a sea lion show and they need a volunteer...",
+        message: "Feeling more confident, the penguin waddles over to the rest of the group to get some fish. You go little penguin! Feeling good about yourself you go to the next enclosure. There's a sea lion show and they need a volunteer...",
         response: [
             {
                 option: "Pick me! Pick me!",
@@ -454,4 +456,3 @@ let scenarios = [
 ];
 
 runGame();
-
