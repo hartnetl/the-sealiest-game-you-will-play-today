@@ -273,33 +273,70 @@ let scenarios = [
         ],
     },
     {
-        id: 3,
-        message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
+        id: 17,
+        message: "You stay and chat to the keeper for a while. They're super impressed by how confident you were holding their favourite tarantula. They end up giving you a lifetime pass to the zoo, to come visit anytime you like!",
         response: [
             {
-                option: "Take the penguin while no one is looking.",
-                goTo: 4
-            },
-            {
-                option: "Give the penguin a quick oat for encouragement. He belongs with the other penguins.",
-                goTo: 5
+                option: "You completed your day at the zoo in one piece! Think you can find the other ways too?",
+                outcome: 'win',
+                goTo: 'intro',
             }
         ],
     },
     {
-        id: 3,
-        message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
+        id: 15,
+        message: "You wake up and no one is around you. It's dark. The only sounds you hear are the soft crunches and rustling coming from the pandas eating bamboo. This is a childhood dream come true! Where to first?",
         response: [
             {
-                option: "Take the penguin while no one is looking.",
-                goTo: 4
+                option: "The red pandas! They're so fluffy. I've always wanted to cuddle one.",
+                goTo: 18,
             },
             {
-                option: "Give the penguin a quick oat for encouragement. He belongs with the other penguins.",
-                goTo: 5
+                option: "Meerkat time! I've loved them since before the ad came out.",
+                goTo: 19,
+            },
+            {
+                option: "To the wolves! They're nocturnal, right?!",
+                goTo: 20,
             }
         ],
     },
+    {
+        id: 18,
+        message: "Fluffy, but deadly. These little guys are mightly aggressive, despite the adorable exterior. Bet you wish you watched a documentary to learn about those sharp claws and strong jaws before trying that.",
+        response: [
+            {
+                option: "I'll know better next time.",
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 19,
+        message: "Your lifelong obsession taught you lots of meerkat puns, you were ready to work on those tv ads with Serge. You also learned the calls of the babies. Congratulations, your hard work paid off and they have accepted you as their new oversized baby. Today marks the first day of your new life as a meerkat.",
+        response: [
+            {
+                option: "I'm happy with my new meerkat life, but let's see what else we can do.",
+                outcome: 'win',
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 20,
+        message: "The wolves are loud as you approach. They're on the hunt. You see a rabbit dodging and weaving in the enclosure. How did that get there? Silly rabbit",
+        response: [
+            {
+                option: "Howl like a wolf. That'll distract them",
+                goTo: 21,
+            },
+            {
+                option: "Watch nature take its course. Survival of the fittest and all that.",
+                goTo: 22,
+            }
+        ],
+    },
+
 
 
     
