@@ -336,11 +336,113 @@ let scenarios = [
             }
         ],
     },
-
-
-
-    
-    
+    {
+        id: 21,
+        message: "Your howling does in fact distract the wolves. They join in the howl. This alerts the security that somehow didn't know you were there. They find you and ban you from the zoo.",
+        response: [
+            {
+                option: "Start again, knowing you saved the rabbit from certain doom.",
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 22,
+        message: "You watch an unbelievable game of cat and mouse, the rabbit dodging and weaving between the wolves. Miraculously the rabbit escapes!",
+        response: [
+            {
+                option: "Quick, lets follow it!",
+                goTo: 23,
+            },
+            {
+                option: "Leave it be. The lion enclosure is nearby anyway.",
+                goTo: 24,
+            }
+        ],
+    },
+    {
+        id: 23,
+        message: "You chase after the rabbit. You think you hear a voice. Could it be... the rabbit? Nah, it's probably the security guard finally noticing you.",
+        response: [
+            {
+                option: "Keep following the rabbit.",
+                goTo: 25,
+            },
+            {
+                option: "Hide.",
+                goTo: 26,
+            }
+        ],
+    },
+    {
+        id: 24,
+        message: "You get to the lions and they're all snoozing. A bit disappointing really.",
+        response: [
+            {
+                option: "Leave them be.",
+                goTo: 27,
+            },
+            {
+                option: "Sing them the call of their people - 'In the Jungle'.",
+                goTo: 28,
+            }
+        ],
+    },
+    {
+        id: 25,
+        message: "You follow the rabbit for what seems like an age. Your head feels funny. The voice grows louder but you lose sight of the rabbit. You trip and fall, but it feels like you just keep on falling. You finally stop and pick yourself up. You're in... Wonderland?!",
+        response: [
+            {
+                option: "I don't know what's real anymore. Bring me back to my zoo!",
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 26,
+        message: "You find a hiding spot. The voice disappears. No sign of security either. You realise it was either the rabbit or you're losing your mind. You realise you don't have one without the other... ",
+        response: [
+            {
+                option: "Let's find a way home.",
+                goTo: 29,
+            },
+            {
+                option: "I give up on reality. I'm moving in with the meerkats.",
+                goTo: 19,
+            }
+        ],
+    },
+    {
+        id: 27,
+        message: "Most of the animals are snoozing. Well, it is nighttime after all! You decide you should be snoozing too. You find a cosy enclosure and fall asleep.",
+        response: [
+            {
+                option: "Feels a bit anti-climactic. I must find the other ways out! Back we go.",
+                goTo: 'intro',
+            },
+        ],
+    },
+    {
+        id: 28,
+        message: "Oh no. Not this song again! The lions wake up in a rage. They listen to this song day in, and day out. They're not in a mighty jungle. And now they're not even sleeping. They've had enough. They manage to escape and all that can be heard is your melodic scream - 'Ee-e-e-oh-mum-a-weh' ",
+        response: [
+            {
+                option: "Oh dear. I'll refrain from singing next time.",
+                goTo: 'intro',
+            }
+        ],
+    },
+    {
+        id: 29,
+        message: "Well done! You made it to the end! Now to find a way out. Think you can manage?",
+        response: [
+            {
+                option: "I could, but this is GroundHog day so I won't",
+                goTo: 'intro',
+            },
+        ],
+    },
+   
 ];
 
 runGame();
