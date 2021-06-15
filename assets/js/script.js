@@ -243,6 +243,7 @@ let scenarios = [
         response: [
             {
                 option: "Let's pretend that didn't happen",
+                outcome: "lose",
                 goTo: 'intro',
             }
         ],
@@ -267,6 +268,7 @@ let scenarios = [
         response: [
             {
                 option: "One day a spiderbite will give you powers. Until then, back to the start you go.",
+                outcome: "lose",
                 goTo: 'intro',
             }
         ],
@@ -306,6 +308,7 @@ let scenarios = [
         response: [
             {
                 option: "I'll know better next time.",
+                outcome: "lose",
                 goTo: 'intro',
             }
         ],
@@ -341,6 +344,7 @@ let scenarios = [
         response: [
             {
                 option: "Start again, knowing you saved the rabbit from certain doom.",
+                outcome: 'lose',
                 goTo: 'intro',
             }
         ],
@@ -393,6 +397,7 @@ let scenarios = [
         response: [
             {
                 option: "I don't know what's real anymore. Bring me back to my zoo!",
+                outcome: 'win',
                 goTo: 'intro',
             }
         ],
@@ -417,6 +422,7 @@ let scenarios = [
         response: [
             {
                 option: "Feels a bit anti-climactic. I must find the other ways out! Back we go.",
+                outcome: 'lose',
                 goTo: 'intro',
             },
         ],
@@ -427,6 +433,7 @@ let scenarios = [
         response: [
             {
                 option: "Oh dear. I'll refrain from singing next time.",
+                outcome: 'lose',
                 goTo: 'intro',
             }
         ],
@@ -437,6 +444,7 @@ let scenarios = [
         response: [
             {
                 option: "I could, but this is GroundHog day so I won't",
+                outcome: 'win',
                 goTo: 'intro',
             },
         ],
