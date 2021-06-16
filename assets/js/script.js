@@ -93,7 +93,6 @@ function displayScores() {
 let clearScoreButton = document.getElementById('clear');
 
 function resetScore() {
-    console.log("you want to reset the score");
     localStorage.removeItem('wins');
     localStorage.removeItem('losses');
 
