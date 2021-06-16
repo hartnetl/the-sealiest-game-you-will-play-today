@@ -15,6 +15,7 @@ function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
     displayText('intro')
+
 };
 
 
@@ -54,12 +55,12 @@ function optionResponse(respond) {
         displayText(respond.goTo);
     } else if (respond.outcome == "win") {
         addWin();
-        populateStorage();
+        storeScores();
         displayText(respond.goTo);
         
     } else if (respond.outcome == "lose") {
         addLoss();
-        populateStorage();
+        storeScores();
         displayText(respond.goTo);
     }
 };
@@ -475,12 +476,12 @@ runGame();
 
 // storeScores('ted', '20');
 
-function populateStorage() {
+function storeScores() {
     localStorage.setItem('wins', document.getElementById('win').innerText);
     localStorage.setItem('losses', document.getElementById('lose').innerText);
 };
 
-localStorage.removeItem('[object HTMLSpanElement]');
+
 
 
 
