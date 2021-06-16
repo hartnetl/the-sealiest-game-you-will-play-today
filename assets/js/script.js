@@ -480,5 +480,7 @@ function populateStorage() {
     localStorage.setItem('losses', document.getElementById('lose').innerText);
 };
 
+localStorage.removeItem('ted');
+
 
 
