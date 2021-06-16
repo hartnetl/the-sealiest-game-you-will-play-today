@@ -480,7 +480,7 @@ function populateStorage() {
     localStorage.setItem('losses', document.getElementById('lose').innerText);
 };
 
-localStorage.removeItem('myDataKey');
+localStorage.removeItem('[object HTMLSpanElement]');
 
 
 
