@@ -15,7 +15,7 @@ function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
     displayText('intro')
-
+    displayScores()
 };
 
 
@@ -480,6 +480,14 @@ function storeScores() {
     localStorage.setItem('wins', document.getElementById('win').innerText);
     localStorage.setItem('losses', document.getElementById('lose').innerText);
 };
+
+function displayScores() {
+    let myWins = localStorage.getItem('wins');
+    let myLosses = localStorage.getItem('losses');
+
+    document.getElementById('win').innerText = myWins;
+    document.getElementById('lose').innerText = myLosses;
+}
 
 
 
