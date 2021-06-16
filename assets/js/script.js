@@ -64,13 +64,13 @@ function optionResponse(respond) {
 function addWin() {
     let oldWin = parseInt(document.getElementById('win').innerText);
     document.getElementById('win').innerText = ++oldWin;
-}
+};
 
 // A function to increase the number of times user lost and had to start again
 function addLoss() {
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
-}
+};
 
 // A function to store scores in local storage
 function storeScores() {
@@ -87,16 +87,19 @@ function displayScores() {
     document.getElementById('win').innerText = myWins;
     document.getElementById('lose').innerText = myLosses;
 }
-
+;
 // A function to allow user to reset their score manually 
-let clearScoreButton = document.getElementById('clear')
+
+let clearScoreButton = document.getElementById('clear');
+
 function resetScore() {
-    console.log("you want to reset the score")
-    localStorage.clear();
+    console.log("you want to reset the score");
+    localStorage.removeItem('wins');
+    localStorage.removeItem('losses');
 
     localStorage.setItem('wins', 0);
     localStorage.setItem('losses', 0);
-}
+};
 
 // Create an array to hold all of the scenarios as objects containing the body text and option text
 
@@ -484,4 +487,4 @@ let scenarios = [
 
 runGame();
 
-// clearScoreButton.addEventListener('click', resetScore);
+clearScoreButton.addEventListener('click', resetScore);
