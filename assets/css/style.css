@@ -8,6 +8,19 @@ h1 {
     text-align: center;
 }
 
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.h-btn {
+    width: 50vw;
+    height: 20vh;
+    border: 2px solid green;
+    margin: 5% auto;
+}
+
 #text-box {
     margin: 5vh auto;
     border: 2px solid black;
