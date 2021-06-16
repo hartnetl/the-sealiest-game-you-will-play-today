@@ -3,6 +3,15 @@
 let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
 
+
+function setLastScore() {
+    previousWins = document.getElementById('last-win');
+    previousLosses = document.getElementById('last-win');
+
+    document.getElementById('last-win').innerText = previousWins;
+    document.getElementById('last-lose').innerText = previousLosses;
+};
+
 // Create funtion to start the game
 
 function runGame() {
@@ -11,7 +20,6 @@ function runGame() {
     displayText('intro')
     displayScores()
 };
-
 
 // This function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA

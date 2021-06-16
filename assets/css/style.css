@@ -39,7 +39,7 @@ h1 {
     margin: 3% auto;
 }
 
-#scores {
+#last-scores, #scores {
     margin: 0 6.25vw;
     border: 1px solid black;
     width: 85vw;
