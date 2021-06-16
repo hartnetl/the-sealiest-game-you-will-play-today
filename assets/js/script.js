@@ -3,13 +3,6 @@
 let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
 
-
-
-
-
-// let penguin = new Audio('penguins.mp3');
-
-
 // Create funtion to start the game
 
 function runGame() {
@@ -47,6 +40,7 @@ function displayText (scenarioIndex) {
             // Add the new option button back to the buttons-container div
             optionButtons.appendChild(optionButton)
         })
+
     };
 
 // Check if option has an outcome, and respond accordingly
@@ -66,16 +60,42 @@ function optionResponse(respond) {
     }
 };
 
+// A function to increase number of times user made it to the end
 function addWin() {
-    // A function to increase number of times user made it to the end
     let oldWin = parseInt(document.getElementById('win').innerText);
     document.getElementById('win').innerText = ++oldWin;
 }
 
+// A function to increase the number of times user lost and had to start again
 function addLoss() {
-    // A function to increase the number of times user lost and had to start again
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
+}
+
+// A function to store scores in local storage
+function storeScores() {
+    localStorage.setItem('wins', document.getElementById('win').innerText);
+    localStorage.setItem('losses', document.getElementById('lose').innerText);
+};
+
+
+// A function to retrieve data in localStorage and set is as the value for the win and lose html elements
+function displayScores() {
+    let myWins = localStorage.getItem('wins');
+    let myLosses = localStorage.getItem('losses');
+
+    document.getElementById('win').innerText = myWins;
+    document.getElementById('lose').innerText = myLosses;
+}
+
+// A function to allow user to reset their score manually 
+let clearScoreButton = document.getElementById('clear')
+function resetScore() {
+    console.log("you want to reset the score")
+    localStorage.clear();
+
+    localStorage.setItem('wins', 0);
+    localStorage.setItem('losses', 0);
 }
 
 // Create an array to hold all of the scenarios as objects containing the body text and option text
@@ -464,37 +484,4 @@ let scenarios = [
 
 runGame();
 
-// let myScore = document.getElementById('win').innerHTML;
-
-// function findScores(key)
-// {
-//    console.log('LocalStorage: ' + key + ' has a value of: ' + value);
-//    return localStorage.getItem(key)
-// }
-
-// function storeScores (key, value) {
-//     localStorage.setItem(key, value);
-//     console.log('You saved ' + key + " as " + value)
-// };
-
-// storeScores('ted', '20');
-
-function storeScores() {
-    localStorage.setItem('wins', document.getElementById('win').innerText);
-    localStorage.setItem('losses', document.getElementById('lose').innerText);
-};
-
-function displayScores() {
-    let myWins = localStorage.getItem('wins');
-    let myLosses = localStorage.getItem('losses');
-
-    document.getElementById('win').innerText = myWins;
-    document.getElementById('lose').innerText = myLosses;
-}
-
-
-
-
-
-
-
+// clearScoreButton.addEventListener('click', resetScore);
