@@ -54,11 +54,12 @@ function optionResponse(respond) {
         displayText(respond.goTo);
     } else if (respond.outcome == "win") {
         addWin();
-        localStorage.setItem(document.getElementById('win'), document.getElementById('win').innerHTML);
+        populateStorage();
         displayText(respond.goTo);
+        
     } else if (respond.outcome == "lose") {
         addLoss();
-        localStorage.setItem(document.getElementById('lose'), document.getElementById('lose').innerHTML);
+        populateStorage();
         displayText(respond.goTo);
     }
 };
@@ -459,7 +460,7 @@ let scenarios = [
 
 runGame();
 
-let myScore = document.getElementById('win').innerHTML;
+// let myScore = document.getElementById('win').innerHTML;
 
 // function findScores(key)
 // {
@@ -467,9 +468,17 @@ let myScore = document.getElementById('win').innerHTML;
 //    return localStorage.getItem(key)
 // }
 
-function storeScores (key, value) {
-    localStorage.setItem(key, value);
-    console.log('You saved ' + key + " as " + value)
+// function storeScores (key, value) {
+//     localStorage.setItem(key, value);
+//     console.log('You saved ' + key + " as " + value)
+// };
+
+// storeScores('ted', '20');
+
+function populateStorage() {
+    localStorage.setItem('wins', document.getElementById('win').innerText);
+    localStorage.setItem('losses', document.getElementById('lose').innerText);
 };
 
-storeScores('ted', '20');
+
+
