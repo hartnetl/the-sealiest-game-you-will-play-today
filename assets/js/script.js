@@ -99,6 +99,8 @@ function resetScore() {
 
     localStorage.setItem('wins', 0);
     localStorage.setItem('losses', 0);
+
+    displayScores()
 };
 
 // Create an array to hold all of the scenarios as objects containing the body text and option text
