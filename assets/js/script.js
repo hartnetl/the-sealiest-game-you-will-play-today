@@ -54,9 +54,11 @@ function optionResponse(respond) {
         displayText(respond.goTo);
     } else if (respond.outcome == "win") {
         addWin();
+        localStorage.setItem(document.getElementById('win'), document.getElementById('win').innerHTML);
         displayText(respond.goTo);
     } else if (respond.outcome == "lose") {
         addLoss();
+        localStorage.setItem(document.getElementById('lose'), document.getElementById('lose').innerHTML);
         displayText(respond.goTo);
     }
 };
@@ -456,3 +458,18 @@ let scenarios = [
 ];
 
 runGame();
+
+let myScore = document.getElementById('win').innerHTML;
+
+// function findScores(key)
+// {
+//    console.log('LocalStorage: ' + key + ' has a value of: ' + value);
+//    return localStorage.getItem(key)
+// }
+
+function storeScores (key, value) {
+    localStorage.setItem(key, value);
+    console.log('You saved ' + key + " as " + value)
+};
+
+storeScores('ted', '20');
