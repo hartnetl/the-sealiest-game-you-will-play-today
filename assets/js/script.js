@@ -3,8 +3,9 @@
 let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
 
-let oldWin = parseInt(document.getElementById('win').innerText);
-let oldLoss = parseInt(document.getElementById('lose').innerText);
+
+
+
 
 // let penguin = new Audio('penguins.mp3');
 
@@ -67,11 +68,13 @@ function optionResponse(respond) {
 
 function addWin() {
     // A function to increase number of times user made it to the end
+    let oldWin = parseInt(document.getElementById('win').innerText);
     document.getElementById('win').innerText = ++oldWin;
 }
 
 function addLoss() {
     // A function to increase the number of times user lost and had to start again
+    let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
 }
 
@@ -488,6 +491,8 @@ function displayScores() {
     document.getElementById('win').innerText = myWins;
     document.getElementById('lose').innerText = myLosses;
 }
+
+
 
 
 
