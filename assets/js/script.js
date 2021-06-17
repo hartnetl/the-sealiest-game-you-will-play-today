@@ -16,14 +16,14 @@ let queue = new Image('assets/images/queue.jpg');
 function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
-    displayText('intro')
+    displayScenario('intro')
     displayScores()
 };
 
 // This function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
 
-function displayText (scenarioIndex) {
+function displayScenario (scenarioIndex) {
     // This finds the desired scenario needed by ID
         let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
     // This changes the text displaying in the text box to the text within the newly targeted scenario
@@ -61,18 +61,18 @@ function displayText (scenarioIndex) {
 function optionResponse(respond) {
 
     if (respond.outcome == null) {
-        displayText(respond.goTo);
+        displayScenario(respond.goTo);
     } else if (respond.outcome == "win") {
         addWin();
         winSound.play();
         storeScores();
-        displayText(respond.goTo);
+        displayScenario(respond.goTo);
         
     } else if (respond.outcome == "lose") {
         addLoss();
         loseSound.play();
         storeScores();
-        displayText(respond.goTo);
+        displayScenario(respond.goTo);
     }
 };
 
