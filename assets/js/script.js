@@ -7,7 +7,8 @@ let optionButtons = document.getElementById('buttons-container');
 let winSound = new Audio('assets/sounds/winBell.mp3');
 
 // Assign variables to images
-let queue = new Image('assets/images/queue.jpg')
+let bgImage = document.getElementById('game-bg');
+let queue = new Image('assets/images/queue.jpg');
 
 // Create funtion to start the game
 
@@ -26,7 +27,8 @@ function displayText (scenarioIndex) {
         let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
     // This changes the text displaying in the text box to the text within the newly targeted scenario
         scenarioText.textContent = scenario.message
-        document.body.style.backgroundImage = scenario.background
+    // This should change the background image 
+        bgImage.style.backgroundImage = scenario.background
     // This removes an option button as long as our element optionButtons has a first child
         while (optionButtons.firstChild) {
             optionButtons.removeChild(optionButtons.firstChild)
@@ -71,12 +73,6 @@ function optionResponse(respond) {
         storeScores();
         displayText(respond.goTo);
     }
-};
-
-// // Change background image to suit scenario
-function imageSelector(image) {
-
-
 };
 
 // A function to increase number of times user made it to the end
