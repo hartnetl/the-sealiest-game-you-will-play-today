@@ -5,6 +5,7 @@ let optionButtons = document.getElementById('buttons-container');
 
 // Assign variables to sounds
 let winSound = new Audio('assets/sounds/winBell.mp3');
+let loseSound = new Audio ('assets/sounds/losetone.mp3')
 
 // Assign variables to images
 let bgImage = document.getElementById('game-bg');
@@ -47,7 +48,6 @@ function displayText (scenarioIndex) {
             // Add the new option button back to the buttons-container div
             optionButtons.appendChild(optionButton)
         })
-
     };
 
 // function displayImage (scenarioIndex) {
@@ -70,6 +70,7 @@ function optionResponse(respond) {
         
     } else if (respond.outcome == "lose") {
         addLoss();
+        loseSound.play();
         storeScores();
         displayText(respond.goTo);
     }
@@ -92,7 +93,6 @@ function storeScores() {
     localStorage.setItem('wins', document.getElementById('win').innerText);
     localStorage.setItem('losses', document.getElementById('lose').innerText);
 };
-
 
 // A function to retrieve data in localStorage and set is as the value for the win and lose html elements
 function displayScores() {
@@ -146,7 +146,6 @@ let scenarios = [
     },
     {
         id: 2,
-        // audio: penguin,
         message: "You waited patiently in the queue for 30 minutes and your finally get it. First stop - the penguin feeding! While you're there the zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
