@@ -3,7 +3,11 @@
 let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
 
+// Assign variables to sounds
 let winSound = new Audio('assets/sounds/winBell.mp3');
+
+// Assign variables to images
+let queue = new Image('assets/images/queue.jpg')
 
 // Create funtion to start the game
 
@@ -22,11 +26,11 @@ function displayText (scenarioIndex) {
         let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
     // This changes the text displaying in the text box to the text within the newly targeted scenario
         scenarioText.textContent = scenario.message
+        document.body.style.backgroundImage = scenario.background
     // This removes an option button as long as our element optionButtons has a first child
         while (optionButtons.firstChild) {
             optionButtons.removeChild(optionButtons.firstChild)
         }
-
     // The option buttons need to be added back in with the desired text from each scenario using a loop
     // We access each response in a scenario and apply the forEach method to apply a new function (respond) to each item in the array
         scenario.response.forEach(respond => {
@@ -43,6 +47,12 @@ function displayText (scenarioIndex) {
         })
 
     };
+
+// function displayImage (scenarioIndex) {
+//     let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
+//     document.style.backgroundImage = scenario.background
+//     })
+// }
 
     
 // Check if option has an outcome, and respond accordingly
@@ -61,6 +71,12 @@ function optionResponse(respond) {
         storeScores();
         displayText(respond.goTo);
     }
+};
+
+// // Change background image to suit scenario
+function imageSelector(image) {
+
+
 };
 
 // A function to increase number of times user made it to the end
@@ -120,6 +136,7 @@ let scenarios = [
     {
         id: 1,
         message: `You get to the zoo and the queue to get in is really long. Do you:`,
+        background: queue,
         response: [
             {
                 option: "Wait in line",
