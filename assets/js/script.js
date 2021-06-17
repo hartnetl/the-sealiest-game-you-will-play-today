@@ -132,7 +132,7 @@ let scenarios = [
     {
         id: 1,
         message: `You get to the zoo and the queue to get in is really long. Do you:`,
-        background: queue,
+        background: "url('assets/images/queue.jpg')",
         response: [
             {
                 option: "Wait in line",
