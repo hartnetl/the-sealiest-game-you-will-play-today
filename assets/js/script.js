@@ -1,17 +1,9 @@
 // Assign variables to be able to target textbox and option button text
 
-var scenarioText = document.getElementById('text-box');
-var optionButtons = document.getElementById('buttons-container');
+let scenarioText = document.getElementById('text-box');
+let optionButtons = document.getElementById('buttons-container');
 
-
-// function setLastScore() {
-//     previousWins = document.getElementById('last-win');
-//     previousLosses = document.getElementById('last-win');
-
-//     document.getElementById('last-win').innerText = previousWins;
-//     document.getElementById('last-lose').innerText = previousLosses;
-// };
-
+let winSound = new Audio('assets/sounds/winBell.mp3');
 
 // Create funtion to start the game
 
@@ -52,6 +44,7 @@ function displayText (scenarioIndex) {
 
     };
 
+    
 // Check if option has an outcome, and respond accordingly
 function optionResponse(respond) {
 
@@ -59,6 +52,7 @@ function optionResponse(respond) {
         displayText(respond.goTo);
     } else if (respond.outcome == "win") {
         addWin();
+        winSound.play();
         storeScores();
         displayText(respond.goTo);
         
