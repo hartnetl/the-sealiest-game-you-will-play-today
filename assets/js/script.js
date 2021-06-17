@@ -1,16 +1,17 @@
 // Assign variables to be able to target textbox and option button text
 
-let scenarioText = document.getElementById('text-box');
-let optionButtons = document.getElementById('buttons-container');
+var scenarioText = document.getElementById('text-box');
+var optionButtons = document.getElementById('buttons-container');
 
 
-function setLastScore() {
-    previousWins = document.getElementById('last-win');
-    previousLosses = document.getElementById('last-win');
+// function setLastScore() {
+//     previousWins = document.getElementById('last-win');
+//     previousLosses = document.getElementById('last-win');
 
-    document.getElementById('last-win').innerText = previousWins;
-    document.getElementById('last-lose').innerText = previousLosses;
-};
+//     document.getElementById('last-win').innerText = previousWins;
+//     document.getElementById('last-lose').innerText = previousLosses;
+// };
+
 
 // Create funtion to start the game
 
@@ -94,8 +95,7 @@ function displayScores() {
 
     document.getElementById('win').innerText = myWins;
     document.getElementById('lose').innerText = myLosses;
-}
-;
+};
 // A function to allow user to reset their score manually 
 
 let clearScoreButton = document.getElementById('clear');
