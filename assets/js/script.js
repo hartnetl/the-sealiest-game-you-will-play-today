@@ -44,7 +44,7 @@ function displayScenario (scenarioIndex) {
             // Add the class to allow css to stlye it properly
             optionButton.classList.add('btn')
             // Add an event listener so when an option button is clicked the right buttons are created
-            optionButton.addEventListener('click', () => optionResponse(respond))
+            optionButton.addEventListener('click', () => optionResponse(itemInArray))
             // Add the new option button back to the buttons-container div
             optionButtons.appendChild(optionButton)
         })
@@ -95,11 +95,11 @@ function displayScores() {
 
     if (localStorage !== undefined || "" || null) {
 
-    document.getElementById('win').innerText = myWins;
-    document.getElementById('lose').innerText = myLosses;
-} else {
-    document.getElementById('win').innerText = 0;
-    document.getElementById('lose').innerText = 0;
+        document.getElementById('win').innerText = myWins;
+        document.getElementById('lose').innerText = myLosses;
+    } else {
+        document.getElementById('win').innerText = 0;
+        document.getElementById('lose').innerText = 0;
 }};
 
 // A function to allow user to reset their score manually 
