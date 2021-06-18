@@ -10,19 +10,24 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
 /* Style for landing page */
 
 #menu-container {
     display: flex;
     flex-direction: column;
-    margin-top: 20vh;
+    margin: 5vh auto;
 }
 
 .h-btn {
     width: 50vw;
     height: 20vh;
     border: 2px solid green;
-    margin: 5% auto;
+    margin: 10% auto;
 }
 
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
