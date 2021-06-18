@@ -5,7 +5,7 @@ let optionButtons = document.getElementById('buttons-container');
 
 // Assign variables to sounds
 let winSound = new Audio('assets/sounds/winBell.mp3');
-let loseSound = new Audio ('assets/sounds/losetone.mp3')
+let loseSound = new Audio ('assets/sounds/losetone.mp3');
 
 // Assign variables to images
 let bgImage = document.getElementById('game-bg');
@@ -28,7 +28,7 @@ function displayScenario (scenarioIndex) {
         let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
     // This changes the text displaying in the text box to the text within the newly targeted scenario
         scenarioText.textContent = scenario.message
-    // This should change the background image 
+    // This changes the background image for each scenario 
         bgImage.style.backgroundImage = scenario.background
     // This removes an option button as long as our element optionButtons has a first child
         while (optionButtons.firstChild) {
@@ -49,12 +49,6 @@ function displayScenario (scenarioIndex) {
             optionButtons.appendChild(optionButton)
         })
     };
-
-// function displayImage (scenarioIndex) {
-//     let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
-//     document.style.backgroundImage = scenario.background
-//     })
-// }
 
     
 // Check if option has an outcome, and respond accordingly
@@ -99,11 +93,16 @@ function displayScores() {
     let myWins = localStorage.getItem('wins');
     let myLosses = localStorage.getItem('losses');
 
+    if (localStorage !== undefined || "" || null) {
+
     document.getElementById('win').innerText = myWins;
     document.getElementById('lose').innerText = myLosses;
-};
-// A function to allow user to reset their score manually 
+} else {
+    document.getElementById('win').innerText = 0;
+    document.getElementById('lose').innerText = 0;
+}};
 
+// A function to allow user to reset their score manually 
 let clearScoreButton = document.getElementById('clear');
 
 function resetScore() {
@@ -146,6 +145,7 @@ let scenarios = [
     },
     {
         id: 2,
+        background: "url('assets/images/penguin.jpg')",
         message: "You waited patiently in the queue for 30 minutes and your finally get it. First stop - the penguin feeding! While you're there the zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
@@ -160,6 +160,7 @@ let scenarios = [
     },
     {
         id: 3,
+        background: "url('assets/images/penguin.jpg')",
         message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
@@ -174,6 +175,7 @@ let scenarios = [
     },
     {
         id: 4,
+        background: "url('assets/images/police.jpg')",
         message: "Uh oh! As you were putting the penguin into your bag he cried out. The zookeeper hears and catches you. The police have been called. your days of crime are over.",
         response: [
             {
