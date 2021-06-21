@@ -8,11 +8,17 @@
 
 h1 {
     text-align: center;
+    color: rgb(228, 243, 186);
 }
 
 h2 {
     text-align: center;
     font-size: 1rem;
+    color: rgb(228, 243, 186);
+}
+
+html {
+    background-color: rgb(56, 39, 83);
 }
 
 /* Style for landing page */
@@ -28,6 +34,13 @@ h2 {
     height: 20vh;
     border: 2px solid green;
     margin: 10% auto;
+    background-color: rgb(255, 255, 59);
+}
+
+button, button a {
+    color: rgb(27, 25, 25);
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
