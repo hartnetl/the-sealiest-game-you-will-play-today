@@ -492,6 +492,7 @@ let scenarios = [
     },
     {
         id: 27,
+        background: "url('assets/images/sleep-win.png')",
         message: "Most of the animals are snoozing. Well, it is nighttime after all! You decide you should be snoozing too. You find a cosy enclosure and fall asleep.",
         response: [
             {
@@ -515,6 +516,7 @@ let scenarios = [
     },
     {
         id: 29,
+        background: "url('assets/images/exit-win.png')",
         message: "Well done! You made it to the end! Now to find a way out. Think you can manage?",
         response: [
             {
