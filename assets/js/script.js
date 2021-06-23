@@ -132,7 +132,7 @@ let scenarios = [
     {
         id: 1,
         message: `You get to the zoo and the queue to get in is really long. Do you:`,
-        background: "url('assets/images/queue.jpg')",
+        background: "url('assets/images/queue.png')",
         response: [
             {
                 option: "Wait in line",
@@ -161,7 +161,7 @@ let scenarios = [
     },
     {
         id: 3,
-        background: "url('assets/images/penguin.jpg')",
+        background: "url('assets/images/penguins.png')",
         message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
@@ -176,7 +176,7 @@ let scenarios = [
     },
     {
         id: 4,
-        background: "url('assets/images/police.jpg')",
+        background: "url('assets/images/police.png')",
         message: "Uh oh! As you were putting the penguin into your bag he cried out. The zookeeper hears and catches you. The police have been called. your days of crime are over.",
         response: [
             {
@@ -189,6 +189,7 @@ let scenarios = [
     {
         id: 5,
         message: "Feeling more confident, the penguin waddles over to the rest of the group to get some fish. You go little penguin! Feeling good about yourself you go to the next enclosure. There's a sea lion show and they need a volunteer...",
+        background: "url('assets/images/sea-lion.png')",
         response: [
             {
                 option: "Pick me! Pick me!",
@@ -203,6 +204,7 @@ let scenarios = [
     {
         id: 6,
         message: "You get chosen, but you get knocked into the water and cannot swim. The sea lions think you're playing a game. You swallow a lot of water before being pulled out. Off to the hosptial you go.",
+        background: "url('assets/images/water-end.png')",
         response: [
             {
                 option: "I'm better now. Let's try again.",
@@ -229,6 +231,7 @@ let scenarios = [
     {
         id: 8,
         message: "Turns out beating your chest at a gorilla make him mad. Who knew huh? The gorilla charges at the glass, baing on it loudly. You get a fright and stumble backwards. You fall, hitting your head. Everything fades to black... ",
+        background: "url('assets/images/gorilla-end.png')",
         response: [
             {
                 option: "Lesson learned. Leave the gorrilas be. Let's try again.",
@@ -240,6 +243,7 @@ let scenarios = [
     {
         id: 9,
         message: "As you take your first bite you feel a hand on your shoulder. They warn you against eating in front of the gorillas. You decide to follow this persons advice, and you and your new friend wander over to the snapping turtle enclosure. They dare you to touch one: ",
+        background: "url('assets/images/turtles.png')",
         response: [
             {
                 option: "No way! That seems like a bad idea.",
@@ -253,6 +257,7 @@ let scenarios = [
     },
     {
         id: 10,
+        background: "url('assets/images/ice-cream.png')",
         message: "Your friend thinks you're lame now. They leave. Feeling sad you go to the cafe to get some ice cream. All they have is pistachio but you have a severe nut allergy. Do you risk it?",
         response: [
             {
@@ -267,6 +272,7 @@ let scenarios = [
     },
     {
         id: 11,
+        background: "url('assets/images/turtle-end.png')",
         message: "Turns out they're called snapping turtles for a reason! You reach out to touch them, but they smell the food on your hands and snap at you, grabbing your hand. They swarm and all snap at you. You escape with your life. But not your hand.",
         response: [
             {
@@ -278,6 +284,7 @@ let scenarios = [
     },
     {
         id: 12,
+        background: "url('assets/images/pandas.png')",
         message: "There's something very relaxing about the pandas. So chill. Much noms. They're almost hypnotic....",
         response: [
             {
@@ -292,6 +299,7 @@ let scenarios = [
     },
     {
         id: 13,
+        background: "url('assets/images/nut-end.png')",
         message: "Well that was foolish. You had an allergic reaction and got rushed to hospital. What else did you expect?!",
         response: [
             {
@@ -303,6 +311,7 @@ let scenarios = [
     },
     {
         id: 14,
+        background: "url('assets/images/tarantula.png')",
         message: "You get your coffee and use this new found energy to visit the rest of the animals. Feeling confident from the caffeine boost you ask to hold the tarantula after she was fed.",
         response: [
             {
@@ -339,6 +348,7 @@ let scenarios = [
     },
     {
         id: 15,
+        background: "url('assets/images/night.png')",
         message: "You wake up and no one is around you. It's dark. The only sounds you hear are the soft crunches and rustling coming from the pandas eating bamboo. This is a childhood dream come true! Where to first?",
         response: [
             {
@@ -379,6 +389,7 @@ let scenarios = [
     },
     {
         id: 20,
+        background: "url('assets/images/wolves.png')",
         message: "The wolves are loud as you approach. They're on the hunt. You see a rabbit dodging and weaving in the enclosure. How did that get there? Silly rabbit",
         response: [
             {
@@ -404,6 +415,7 @@ let scenarios = [
     },
     {
         id: 22,
+        background: "url('assets/images/rabbit.png')",
         message: "You watch an unbelievable game of cat and mouse, the rabbit dodging and weaving between the wolves. Miraculously the rabbit escapes!",
         response: [
             {
@@ -418,6 +430,7 @@ let scenarios = [
     },
     {
         id: 23,
+        background: "url('assets/images/follow.png')",
         message: "You chase after the rabbit. You think you hear a voice. Could it be... the rabbit? Nah, it's probably the security guard finally noticing you.",
         response: [
             {
@@ -432,6 +445,7 @@ let scenarios = [
     },
     {
         id: 24,
+        background: "url('assets/images/lions.png')",
         message: "You get to the lions and they're all snoozing. A bit disappointing really.",
         response: [
             {
