@@ -20,7 +20,7 @@ h1 {
     color: #462255;
     font-family: 'Kirang Haerang', cursive;
     background-color: rgb(147, 225, 216);
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 /* Set background colour in case images don't load */
@@ -131,10 +131,11 @@ h2 {
     background-color: rgb(147, 225, 216);
     border-radius: 10px;
     width: 80vw;
-    height: 35vh;
+    height: 30vh;
     padding: 2.5vh 2.5vw;
     box-shadow: 5px 3px 5px 5px rgba(37, 37, 36, 0.4);
     color: #aa4465;
+    font-size: 1.5rem;
 }
 
 /* Set my option buttons in one column */
@@ -147,9 +148,9 @@ h2 {
 .btn {
     border: 1px solid rgb(170, 68, 101);
     width: 85vw;
-    margin: 2% auto;
+    margin: 1% auto;
     font-size: 1rem;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 1%;
     background-color: rgb(170, 68, 101);
     color: rgb(147, 225, 216);
@@ -161,16 +162,15 @@ h2 {
     position: fixed;
     bottom: 0%;
     margin: 0 auto;
-    border-radius: 5px;
     width: 100vw;
     background-color: rgb(147, 225, 216);
     color: #462255;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
 /* Space out the scores */
 .count {
-    margin-left: 15%;
+    margin-left: 30%;
 }
 
 /* The button to clear scores */
