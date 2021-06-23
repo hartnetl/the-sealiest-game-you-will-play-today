@@ -1,4 +1,7 @@
 /* Style for all pages */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Big+Shoulders+Stencil+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 * {
     margin: 0;
@@ -6,19 +9,25 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
     text-align: center;
-    color: rgb(228, 243, 186);
+    color: #462255;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 50px;
 }
 
 h2 {
     text-align: center;
-    font-size: 1rem;
-    color: rgb(228, 243, 186);
+    font-size: .7rem;
+    color: #ffa69e;
 }
 
 html {
-    background-color: rgb(56, 39, 83);
+    background-color: #93e1d8;
 }
 
 /* Style for landing page */
@@ -33,14 +42,34 @@ html {
     width: 50vw;
     height: 20vh;
     border: 2px solid green;
-    margin: 10% auto;
+    margin: 5% auto;
+    background-color: #aa4465;
+    border-radius: 15px;
+}
+
+#last-scores {
+    margin: 0 6.25vw;
+    border: 1px solid black;
+    width: 85vw;
+    position: absolute;
+    bottom: 2%;
     background-color: rgb(255, 255, 59);
+    border-radius: 5px;
 }
 
 button, button a {
-    color: rgb(27, 25, 25);
+    color: #ffa69e;
     font-size: 2rem;
     text-decoration: none;
+}
+
+#last-scores {
+    margin: 0 6.25vw;
+    border: 1px solid black;
+    width: 85vw;
+    position: absolute;
+    bottom: 2%;
+    background-color: #ffa69e;
 }
 
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
@@ -101,10 +130,9 @@ button, button a {
     margin: 3% auto;
 }
 
-#last-scores, #scores {
+#scores {
     margin: 0 6.25vw;
     border: 1px solid black;
-    background-color: burlywood;
     width: 85vw;
     position: absolute;
     bottom: 2%;
