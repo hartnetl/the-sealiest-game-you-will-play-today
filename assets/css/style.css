@@ -200,7 +200,7 @@ h2 {
     color: white;
 }
 
-/* Media query for tablet */
+/* Media query for large tablet - 1024 px*/
 
 @media screen and (max-width: 1024px) {
     h1 {
@@ -210,7 +210,7 @@ h2 {
     #last-scores {
         position: fixed;
         bottom: 5%;
-        left: 12.5vw;
+        left: 15vw;
     }
 
     .count {
@@ -227,7 +227,46 @@ h2 {
         font-size: 3rem;
     }
 
+    .modal {
+        top: -10%;
+    }
 
+    .modal-content {
+        font-size: 2rem;
+    }
+
+    #text-box {
+        font-size: 2rem;
+    }
+
+    #scores {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    #exit {
+        font-size: 5rem;
+        margin-right: 2%;
+    }
+
+    #clear {
+        font-size: 1.5rem;
+    }
 }
 
+/* media query for smaller tablets - 800px */
 
+@media screen and (max-width: 800px) {
+    .count {
+        margin: 0 7%;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+}
