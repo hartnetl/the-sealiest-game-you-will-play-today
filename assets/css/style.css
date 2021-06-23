@@ -19,8 +19,8 @@ h1 {
     text-align: center;
     color: #462255;
     font-family: 'Kirang Haerang', cursive;
-    font-size: 50px;
     background-color: rgb(147, 225, 216);
+    font-size: 4rem;
 }
 
 /* Set background colour in case images don't load */
@@ -33,7 +33,6 @@ html {
 /* Style h2 */
 h2 {
     text-align: center;
-    font-size: .7rem;
     color: #aa4465;
 }
 
@@ -46,10 +45,10 @@ h2 {
 
 /* Style those buttonws */
 .h-btn {
-    width: 50vw;
-    height: 20vh;
+    width: 40vw;
+    height: 15vh;
     border: 2px solid #aa4465;
-    margin: 5% auto;
+    margin: 3% auto;
     background-color: #aa4465;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #80314a;
@@ -77,11 +76,13 @@ h2 {
     margin: 0 auto;
     border: 1px groove #d18781;
     box-shadow: 2px 2px 2px 2px #d18781;
-    width: 85vw;
+    width: 40vw;
     background-color: #ffa69e;
-    text-align: justify;
     border-radius: 5px;
     color: #aa4465;
+    font-size: 1.5rem;
+    padding: 1% 15vw;
+    margin-top: 5%;
 }
 
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
@@ -200,5 +201,16 @@ h2 {
     color: white;
 }
 
+/* Media query for tablet */
+
+@media screen and (max-width: 500) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: .7rem;
+    }
+}
 
 
