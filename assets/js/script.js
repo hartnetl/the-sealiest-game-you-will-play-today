@@ -326,6 +326,7 @@ let scenarios = [
     },
     {
         id: 16,
+        background: "url('assets/images/tarantula-lose.png')",
         message: "The good news is you succeeded in making her mad and she bit you. The bad news is you did not get superpowers or spidey senses, and the reptile keeper just kicked you out.",
         response: [
             {
@@ -367,6 +368,7 @@ let scenarios = [
     },
     {
         id: 18,
+        background: "url('assets/images/red-panda-lose.png')",
         message: "Fluffy, but deadly. These little guys are mightly aggressive, despite the adorable exterior. Bet you wish you watched a documentary to learn about those sharp claws and strong jaws before trying that.",
         response: [
             {
@@ -404,6 +406,7 @@ let scenarios = [
     },
     {
         id: 21,
+        background: "url('assets/images/wolves-end.png')",
         message: "Your howling does in fact distract the wolves. They join in the howl. This alerts the security that somehow didn't know you were there. They find you and ban you from the zoo.",
         response: [
             {
@@ -471,6 +474,7 @@ let scenarios = [
     },
     {
         id: 26,
+        background: "url('assets/images/hide.png')",
         message: "You find a hiding spot. The voice disappears. No sign of security either. You realise it was either the rabbit or you're losing your mind. You realise you don't have one without the other... ",
         response: [
             {

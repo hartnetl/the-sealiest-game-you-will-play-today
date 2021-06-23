@@ -128,8 +128,7 @@ h2 {
 /* The main text box on the page */
 #text-box {
     margin: 5vh auto 2vh auto;
-    border: 2px solid rgb(147, 225, 216);
-    background-color: rgba(147, 225, 216, .95);
+    background-color: rgb(147, 225, 216);
     border-radius: 10px;
     width: 80vw;
     height: 35vh;
@@ -152,7 +151,7 @@ h2 {
     font-size: 1rem;
     border-radius: 3px;
     padding: 1%;
-    background-color: rgba(170, 68, 101, .9);
+    background-color: rgb(170, 68, 101);
     color: rgb(147, 225, 216);
 }
 
