@@ -120,6 +120,7 @@ function resetScore() {
 let scenarios = [
     {
         id: 'intro',
+        background: "url('assets/images/intro.png')",
         message: "Picture this. It's a beautiful sunny day. You have no plans or responsibilities. Life is good. You decide to go to the zoo. What could go wrong?", 
         response: [
             {
@@ -212,6 +213,7 @@ let scenarios = [
     },
     {
         id: 7,
+        background: "url('assets/images/gorillas.png')",
         message: "A kid gets chosen as the volunteer and performs some cool tricks with the sea lions. Man that looks cool. That should have been you. Being the mature person you are, you move on to the next enclosure with minimal sulking. You arrive at the gorillas. A huge silverback is patrolling near where you are.",
         response: [
             {

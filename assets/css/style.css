@@ -120,7 +120,7 @@ h2 {
 /* The background of the page */
 #game-bg {
     height: 100vh;
-    background-image: url('../images/intro.jpg');
+    background-image: url('../images/zoo.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
