@@ -338,6 +338,7 @@ let scenarios = [
     },
     {
         id: 17,
+        background: "url('assets/images/tarantula-win.png')",
         message: "You stay and chat to the keeper for a while. They're super impressed by how confident you were holding their favourite tarantula. They end up giving you a lifetime pass to the zoo, to come visit anytime you like!",
         response: [
             {
@@ -380,6 +381,7 @@ let scenarios = [
     },
     {
         id: 19,
+        background: "url('assets/images/meerkat-win.png')",
         message: "Your lifelong obsession taught you lots of meerkat puns, you were ready to work on those tv ads with Serge. You also learned the calls of the babies. Congratulations, your hard work paid off and they have accepted you as their new oversized baby. Today marks the first day of your new life as a meerkat.",
         response: [
             {
@@ -463,6 +465,7 @@ let scenarios = [
     },
     {
         id: 25,
+        background: "url('assets/images/rabbit-win.png')",
         message: "You follow the rabbit for what seems like an age. Your head feels funny. The voice grows louder but you lose sight of the rabbit. You trip and fall, but it feels like you just keep on falling. You finally stop and pick yourself up. You're in... Wonderland?!",
         response: [
             {
@@ -493,13 +496,14 @@ let scenarios = [
         response: [
             {
                 option: "Feels a bit anti-climactic. I must find the other ways out! Back we go.",
-                outcome: 'lose',
+                outcome: 'win',
                 goTo: 'intro',
             },
         ],
     },
     {
         id: 28,
+        background: "url('assets/images/lion-lose.png')",
         message: "Oh no. Not this song again! The lions wake up in a rage. They listen to this song day in, and day out. They're not in a mighty jungle. And now they're not even sleeping. They've had enough. They manage to escape and all that can be heard is your melodic scream - 'Ee-e-e-oh-mum-a-weh' ",
         response: [
             {
