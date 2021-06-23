@@ -268,5 +268,43 @@ h2 {
     .modal-content {
         width: 70%;
     }
+}
 
+/* media query for large phones - 450px */
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .h-btn {
+        width: 50vw;
+        height: 20vh;
+    }
+
+    #last-scores {
+        padding: 1%;
+        width: 74%;
+    }
+
+    #exit {
+        font-size: 3rem;
+    }
+
+    #text-box {
+        font-size: 1.5rem;
+        height: 40vh;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    #scores {
+        font-size: 1.5rem;
+    }
+
+    #clear {
+        font-size: 1rem;
+    }
 }
