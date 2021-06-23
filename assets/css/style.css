@@ -1,18 +1,20 @@
-/* Style for all pages */
+/* __________ STYLE FOR ALL PAGES __________ */
 @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+/* Remove default margin, pagging and borders */
 * {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
+/* Set font across pages */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Style h1 - the game title */
 h1 {
     text-align: center;
     color: #462255;
@@ -20,24 +22,28 @@ h1 {
     font-size: 50px;
 }
 
+/* Set background colour in case images don't load */
+html {
+    background-color: #93e1d8;
+}
+
+/* __________ STYLE FOR LANDING PAGE __________ */
+
+/* Style h2 */
 h2 {
     text-align: center;
     font-size: .7rem;
     color: #aa4465;
 }
 
-html {
-    background-color: #93e1d8;
-}
-
-/* Style for landing page */
-
+/* Set up my home page buttons */
 #menu-container {
     display: flex;
     flex-direction: column;
     margin: 5vh auto;
 }
 
+/* Style those buttonws */
 .h-btn {
     width: 50vw;
     height: 20vh;
@@ -46,20 +52,25 @@ html {
     background-color: #aa4465;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #80314a;
+    color: #ffa69e;
+    font-size: 2rem;
 }
 
+/* Style link to match buttons */
+.h-btn a {
+    color: #ffa69e;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Change the colour of the buttons when hovered over */
 .h-btn:hover {
     border: 2px solid #462255;
     background-color: #462255;
     box-shadow: 5px 5px 5px 5px #2d1636;
 }
 
-button, button a {
-    color: #ffa69e;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
+/* Score box on landing page */
 #last-scores {
     display: block;
     margin: 0 auto;
@@ -84,28 +95,28 @@ button, button a {
     height: 100%; 
     background-color: rgb(221, 255, 247, .3); 
     overflow: scroll;
-  }
+}
   
-  /* The actual modal box */
-  .modal-content {
-    background-color: #ffa69e;
-    margin: 30% auto; 
-    padding: 20px;
-    border: 1px solid #c07f79;
-    width: 70%; 
-    color: #462255;
-    
-  }
+/* The actual modal box */
+.modal-content {
+  background-color: #ffa69e;
+  margin: 30% auto; 
+  padding: 20px;
+  border: 1px solid #c07f79;
+  width: 70%; 
+  color: #462255;
+}
   
-  /* The Close Button */
-  #close {
-    color: #aa4465;
-    font-size: 30px;
-    float: right;
-  }
+/* The Close Button */
+#close {
+  color: #aa4465;
+  font-size: 30px;
+  float: right;
+}
 
-/* Style for game page */
+/* __________ STYLE FOR GAME PAGE __________ */
 
+/* The background of the page */
 #game-bg {
     height: 100vh;
     background-image: url('../images/intro.jpg');
@@ -113,25 +124,29 @@ button, button a {
     background-size: cover;
 }
 
+/* The main text box on the page */
 #text-box {
     margin: 5vh auto;
     border: 2px solid black;
     background-color: rgb(222, 184, 135, .4);
     width: 85vw;
-    height: 50vh;
+    height: 40vh;
 }
 
+/* Set my option buttons in one column */
 #buttons-container {
     display: flex;
     flex-direction: column;
 }
 
+/* style the buttons */
 .btn {
     border: 1px solid black;
     width: 50vw;
     margin: 3% auto;
 }
 
+/* Style the score box */
 #scores {
     margin: 0 6.25vw;
     border: 1px solid black;
@@ -140,13 +155,31 @@ button, button a {
     bottom: 2%;
 }
 
+/* Space out the scores */
 .count {
     margin-left: 15%;
 }
 
+/* The button to clear scores */
 #clear {
     display: block;
     margin: 0 auto;
     border: 1px dashed blue;
 }
+
+/* The 'x' button to close the game */
+#exit {
+    float: right;
+    font-size: 30px;
+}
+
+#exit a {
+    text-decoration: none;
+}
+
+#exit a:hover {
+    color: white;
+}
+
+
 
