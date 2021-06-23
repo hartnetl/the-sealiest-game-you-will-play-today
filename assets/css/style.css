@@ -91,12 +91,10 @@ h2 {
     display: none; 
     position: fixed; 
     z-index: 1; 
-    left: 0;
-    top: 0;
+    top: -50%;
     width: 100%; 
-    height: 100%; 
+    height: 150%; 
     background-color: rgb(221, 255, 247, .3); 
-    overflow: scroll;
 }
   
 /* The actual modal box */
@@ -105,8 +103,9 @@ h2 {
   margin: 30% auto; 
   padding: 20px;
   border: 1px solid #c07f79;
-  width: 70%; 
+  width: 60%; 
   color: #462255;
+  font-size: 1.5rem;
 }
   
 /* The Close Button */
