@@ -127,13 +127,14 @@ h2 {
 /* The main text box on the page */
 #text-box {
     margin: 5vh auto;
-    border: 2px solid rgb(255, 166, 158);
-    background-color: rgba(255, 166, 158, .8);
+    border: 2px solid rgb(147, 225, 216);
+    background-color: rgba(147, 225, 216, .85);
     border-radius: 10px;
     width: 80vw;
     height: 35vh;
     padding: 2.5vh 2.5vw;
     box-shadow: 5px 3px 5px 5px rgba(37, 37, 36, 0.4);
+    color: #aa4465;
 }
 
 /* Set my option buttons in one column */
@@ -144,9 +145,14 @@ h2 {
 
 /* style the buttons */
 .btn {
-    border: 1px solid black;
+    border: 1px solid rgb(170, 68, 101);
     width: 50vw;
     margin: 3% auto;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 1%;
+    background-color: rgba(170, 68, 101, .9);
+    color: rgb(147, 225, 216);
 }
 
 /* Style the score box */
