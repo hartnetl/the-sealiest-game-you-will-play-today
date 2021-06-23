@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-      let myWins = localStorage.getItem('wins');
-      let myLosses = localStorage.getItem('losses');
-  
-      if (localStorage === undefined || " " || null || NaN) {
-          document.getElementById('win').innerText = 0;
-          document.getElementById('lose').innerText = 0;
-      } else {
-          document.getElementById('win').innerText = myWins;
-          document.getElementById('lose').innerText = myLosses;
-  }});
+    let myWins = localStorage.getItem('wins');
+    let myLosses = localStorage.getItem('losses');
+
+    if (localStorage.length === 0) {
+      document.getElementById('last-win').innerText = 0;
+      document.getElementById('last-lose').innerText = 0;
+    } else {
+    document.getElementById('last-win').innerText = myWins;
+    document.getElementById('last-lose').innerText = myLosses;
+}});
 
 // Set variables to access modal elements
 let modal = document.getElementById("helpModal");
