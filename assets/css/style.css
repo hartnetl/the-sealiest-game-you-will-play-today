@@ -129,10 +129,11 @@ h2 {
     margin: 5vh auto;
     border: 2px solid rgb(255, 166, 158);
     background-color: rgba(255, 166, 158, .8);
+    border-radius: 10px;
     width: 80vw;
     height: 35vh;
     padding: 2.5vh 2.5vw;
-    box-shadow: 5px 3px 10px 10px rgba(37, 37, 36, 0.4);
+    box-shadow: 5px 3px 5px 5px rgba(37, 37, 36, 0.4);
 }
 
 /* Set my option buttons in one column */
@@ -150,11 +151,18 @@ h2 {
 
 /* Style the score box */
 #scores {
-    margin: 0 6.25vw;
-    border: 1px solid black;
-    width: 85vw;
+    display: block;
     position: absolute;
-    bottom: 2%;
+    bottom: 5%;
+    left: 7.5vw;
+    margin: 0 auto;
+    border: 1px solid rgb(147, 225, 216);
+    border-radius: 5px;
+    width: 85vw;
+    background-color: rgba(147, 225, 216, .85);
+    color: #462255;
+    box-shadow: 2px 2px 2px 2px rgba(37, 37, 36, 0.4);
+    padding-top: 2%;
 }
 
 /* Space out the scores */
@@ -166,7 +174,13 @@ h2 {
 #clear {
     display: block;
     margin: 0 auto;
-    border: 1px dashed blue;
+    background-color: rgba(70, 34, 85, 0);
+    color: #462255;
+}
+
+#clear:hover {
+    color: #aa4465;
+    font-weight: bolder;
 }
 
 /* The 'x' button to close the game */
