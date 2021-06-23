@@ -94,11 +94,11 @@ function displayScores() {
     let myLosses = localStorage.getItem('losses');
 
     if (localStorage.length === 0) {
-      document.getElementById('last-win').innerText = 0;
-      document.getElementById('last-lose').innerText = 0;
+      document.getElementById('win').innerText = 0;
+      document.getElementById('lose').innerText = 0;
     } else {
-    document.getElementById('last-win').innerText = myWins;
-    document.getElementById('last-lose').innerText = myLosses;
+    document.getElementById('win').innerText = myWins;
+    document.getElementById('lose').innerText = myLosses;
 }};
 
 // A function to allow user to reset their score manually 
