@@ -202,14 +202,32 @@ h2 {
 
 /* Media query for tablet */
 
-@media screen and (max-width: 500) {
+@media screen and (max-width: 1024px) {
     h1 {
-        font-size: 50px;
+        font-size: 100px;
     }
 
-    h2 {
-        font-size: .7rem;
+    #last-scores {
+        position: fixed;
+        bottom: 5%;
+        left: 12.5vw;
     }
+
+    .count {
+        margin: 0 10%;
+    }
+
+    .h-btn {
+        font-size: 3rem;
+        height: 12vh;
+        margin: 5vh auto;
+    }
+
+    .h-btn a {
+        font-size: 3rem;
+    }
+
+
 }
 
 
