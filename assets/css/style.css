@@ -311,7 +311,7 @@ h2 {
 
 /* media query for standard phone - 350px */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     
     h1 {
         font-size: 40px;
@@ -329,10 +329,14 @@ h2 {
         font-size: 1rem;
     }
 
+    #last-scores span {
+        margin-right: 10%;
+    }
+
     #text-box {
         font-size: 1.1rem;
         margin: 5% auto;
-        height: 40vh;
+        height: vh;
     }
 
     .btn {
