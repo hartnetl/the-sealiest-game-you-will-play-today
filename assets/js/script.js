@@ -150,6 +150,7 @@ let scenarios = [
         response: [
             {
                 option: "Take the penguin while no one is looking.",
+                outcome: 'lose',
                 goTo: 4
             },
             {
@@ -165,6 +166,7 @@ let scenarios = [
         response: [
             {
                 option: "Take the penguin while no one is looking.",
+                outcome: 'lose',
                 goTo: 4
             },
             {
@@ -180,7 +182,6 @@ let scenarios = [
         response: [
             {
                 option: "Let's try that again..",
-                outcome: 'lose',
                 goTo: 'intro'
             },
         ],
@@ -192,6 +193,7 @@ let scenarios = [
         response: [
             {
                 option: "Pick me! Pick me!",
+                outcome: 'lose',
                 goTo: 6
             },
             {
@@ -207,7 +209,6 @@ let scenarios = [
         response: [
             {
                 option: "I'm better now. Let's try again.",
-                outcome: 'lose',
                 goTo: 'intro'
             },
         ],
@@ -219,6 +220,7 @@ let scenarios = [
         response: [
             {
                 option: "Show that gorilla who's boss! Beat your chest at him.",
+                outcome: 'lose',
                 goTo: 8
             },
             {
@@ -234,7 +236,6 @@ let scenarios = [
         response: [
             {
                 option: "Lesson learned. Leave the gorrilas be. Let's try again.",
-                outcome: 'lose',
                 goTo: 'intro',
             },
         ],
@@ -250,6 +251,7 @@ let scenarios = [
             },
             {
                 option: "You're not one to shy away from a challenge. Let's pet that weirdly adorable little head.",
+                outcome: 'lose',
                 goTo: 11,
             }
         ],
@@ -265,6 +267,7 @@ let scenarios = [
             },
             {
                 option: "No pain no gain! I want ice cream!",
+                outcome: 'lose',
                 goTo: 13,
             }
         ],
@@ -276,7 +279,6 @@ let scenarios = [
         response: [
             {
                 option: "I want my hand back! Let's restart.",
-                outcome: 'lose',
                 goTo: 'intro',
             },
         ],
@@ -303,7 +305,6 @@ let scenarios = [
         response: [
             {
                 option: "Let's pretend that didn't happen",
-                outcome: "lose",
                 goTo: 'intro',
             }
         ],
@@ -315,10 +316,12 @@ let scenarios = [
         response: [
             {
                 option: "You purposely make her angry while you hold her. You want to be bitten to become the next Spiderman.",
+                outcome: 'lose',
                 goTo: 16,
             },
             {
                 option: "You stay absolutly still, watching with fascination while she crawls around you.",
+                outcome: 'win',
                 goTo: 17,
             }
         ],
@@ -330,7 +333,6 @@ let scenarios = [
         response: [
             {
                 option: "One day a spiderbite will give you powers. Until then, back to the start you go.",
-                outcome: "lose",
                 goTo: 'intro',
             }
         ],
@@ -342,7 +344,6 @@ let scenarios = [
         response: [
             {
                 option: "You completed your day at the zoo in one piece! Think you can find the other ways too?",
-                outcome: 'win',
                 goTo: 'intro',
             }
         ],
@@ -354,10 +355,12 @@ let scenarios = [
         response: [
             {
                 option: "The red pandas! They're so fluffy. I've always wanted to cuddle one.",
+                outcome: 'lose',
                 goTo: 18,
             },
             {
                 option: "Meerkat time! I've loved them since before the ad came out.",
+                outcome: 'win',
                 goTo: 19,
             },
             {
@@ -373,7 +376,6 @@ let scenarios = [
         response: [
             {
                 option: "I'll know better next time.",
-                outcome: "lose",
                 goTo: 'intro',
             }
         ],
@@ -385,7 +387,6 @@ let scenarios = [
         response: [
             {
                 option: "I'm happy with my new meerkat life, but let's see what else we can do.",
-                outcome: 'win',
                 goTo: 'intro',
             }
         ],
@@ -397,6 +398,7 @@ let scenarios = [
         response: [
             {
                 option: "Howl like a wolf. That'll distract them",
+                outcome: 'lose',
                 goTo: 21,
             },
             {
@@ -412,7 +414,6 @@ let scenarios = [
         response: [
             {
                 option: "Start again, knowing you saved the rabbit from certain doom.",
-                outcome: 'lose',
                 goTo: 'intro',
             }
         ],
@@ -439,6 +440,7 @@ let scenarios = [
         response: [
             {
                 option: "Keep following the rabbit.",
+                outcome: 'win',
                 goTo: 25,
             },
             {
@@ -454,10 +456,12 @@ let scenarios = [
         response: [
             {
                 option: "Leave them be.",
+                outcome: 'win',
                 goTo: 27,
             },
             {
                 option: "Sing them the call of their people - 'In the Jungle'.",
+                outcome: 'lose',
                 goTo: 28,
             }
         ],
@@ -469,7 +473,6 @@ let scenarios = [
         response: [
             {
                 option: "I don't know what's real anymore. Bring me back to my zoo!",
-                outcome: 'win',
                 goTo: 'intro',
             }
         ],
@@ -481,10 +484,12 @@ let scenarios = [
         response: [
             {
                 option: "Let's find a way home.",
+                outcome: 'win',
                 goTo: 29,
             },
             {
                 option: "I give up on reality. I'm moving in with the meerkats.",
+                outcome: 'win',
                 goTo: 19,
             }
         ],
@@ -496,7 +501,6 @@ let scenarios = [
         response: [
             {
                 option: "Feels a bit anti-climactic. I must find the other ways out! Back we go.",
-                outcome: 'win',
                 goTo: 'intro',
             },
         ],
@@ -508,7 +512,6 @@ let scenarios = [
         response: [
             {
                 option: "Oh dear. I'll refrain from singing next time.",
-                outcome: 'lose',
                 goTo: 'intro',
             }
         ],
@@ -520,7 +523,6 @@ let scenarios = [
         response: [
             {
                 option: "I could, but this is GroundHog day so I won't",
-                outcome: 'win',
                 goTo: 'intro',
             },
         ],
