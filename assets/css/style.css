@@ -47,7 +47,6 @@ h2 {
 .h-btn {
     width: 40vw;
     height: 15vh;
-    border: 2px solid #aa4465;
     margin: 3% auto;
     background-color: #aa4465;
     border-radius: 15px;
@@ -65,7 +64,6 @@ h2 {
 
 /* Change the colour of the buttons when hovered over */
 .h-btn:hover {
-    border: 2px solid #462255;
     background-color: #462255;
     box-shadow: 5px 5px 5px 5px #2d1636;
 }
@@ -154,7 +152,6 @@ h2 {
 
 /* style the buttons */
 .btn {
-    border: 1px solid rgb(170, 68, 101);
     width: 85vw;
     margin: 1% auto;
     font-size: 1rem;
