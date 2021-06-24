@@ -4,11 +4,12 @@
 
 ***
 
-Live site: [Name of the page](the live link)
+Live site: [Name of the page](https://hartnetl.github.io/the-sealiest-game-you-will-play-today/)
 
 Project Aim: Use vanilla JavaScript to build a text adventure game
 
-A brief introduction to the site 
+'A day at the zoo' is a fun text-based storybook adventure game. As a player you will be presented with different scenarios and a couple of ways to respond.   
+The story will take you through, as I'm sure you guessed, a day at the zoo. But be warned, while a day at the zoo seems nice and straight forward, danger lurks just around the corner...
 
 
 1. [Introduction](#1-introduction)
@@ -37,62 +38,94 @@ A brief introduction to the site
 
 ***
 
-Broad overview - who is this page / site / game aimed towards
+Text adventure games have become a fairly niche area of gaming, but with the rise in popularity of text based games such as Telltale's Walking Dead there's some hope for this genre yet.  
+This game aims to bring nostalgia to those that played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing.
+
 
 ### 2.1 Strategy
 
 #### User Goals
 
-What do users want to gain by using this site 
+Users are looking to play a fun text based adventure game, with replayability and some form of competitiveness.
 
 #### Project goals
 
-What do I hope to gain by making and sharing this game
+By making this game I hope to shine a light on the overlooked genre of text adventure games. It's a different pace for playing a computer game, but a refreshing one in my opinion.
+The story takes an ordinary day at the zoo and turns it on its head. I want to capture the player's curiosity and attention to make them want to replay the game and find the different ways to end the game.
 
 #### User Stories
 
-- Users want to ....
+- Users want to play a game that functions correctly and flows correctly
+- Users want a pleasant visual experience, with easy readability
+- Users want to be able to keep track of their score
+- Users want to be able to easily exit the game
+- Users want to be able to reset the game
 
-- The owners want to ...
+- The owners want to make the game easy to understand
+- The owners want to make sure game isn't too complicated
+- The owners want to promote competitiveness to encourage people sharing the game with their friends
+- The owners want to make it clear if each ending counts as a win or loss
 
 ### 2.2 Scope
 
-The aim of this project was.....
+The aim of this project was to build a game using vanilla JavaScript. I decided to go ahead with a text based adventure game with mutiple outcomes for the player to discover.
 
 The features to include:
 
-- a list
-- of features
-- I hope to include
+- Pop-up instructions for how to play the game
+- Option to exit the game
+- Score tracker
+- Clear score option
+- Win / lose sound to signal winning and losing options
+- Change background image to match scenario
+- Change background image to emphasize win/loss point 
+
 
 ### 2.3 Structure
 
-What will this look like
+The game will have two pages, with simple styling:
+1. landing page
+    - Title
+    - Play button which brings user to the start of the game
+    - How to Play button which brings up a message listing instructions for the game
+    - A tally of scores, set to 0 for new users or previous score is player has played the game on that device before
+
+2. game page
+    - Title
+    - Exit button
+    - Text box to display the scenarios
+    - Option buttons for user to choose how the story progresses
+    - Score tally
+    - Clear scores button
 
 ### 2.4 Skeleton
 
-What is the structure + layout going to be. Include wireframes.
+The game has a very simple, but fun layout. The background will change to match the scenario being displayed.
 
-#### Deviations from wireframe
-
-If you stray from the wireframe, justify it here
 
 ### 2.5 Surface
 
 #### Aesthetic
 
-
+The game has a simple layout, with simple styling to match. 
 
 #### Colours
 
+![Colour palette used](assets/images/readme-files/colours.png)
 
+The game was styled using this colour palette found on [coolers.co](https://coolors.co/ddfff7-93e1d8-ffa69e-aa4465-462255).
+It's a fun, warm palette with a nice level of contrast with colours.
+The background images did not follow this colour palette. 
+These included a light blue / lavendar colour for neutral scenarios, navy for night time scenarios, red for options that result in a losing point and green for options that result in a winning point.
 
 #### Fonts
 
-
+The title font is 'Kirang Haerang'. It is a fun font that's still easy to read. 
+For the main text I chose 'Roboto' as it's an appealing font that's easy to read in buld, and sans-serif fonts are much easier to read for some people with learning difficulties.
 
 #### Imagery
 
+The background images were created using [Adobe Spark](https://spark.adobe.com/sp/). 
 
 
 ## 3 Features
@@ -101,11 +134,32 @@ If you stray from the wireframe, justify it here
 
 ### 3.1 Existing Features
 
-- Connect user stories to screenshots of site
+- Users want to play a game that functions correctly and flows correctly
+            The game works
+- Users want a pleasant visual experience, with easy readability
+            fonts have contrast to background, text box has full opacity, backgrounds are entertaining
+- Users want to be able to keep track of their score
+            Score is tracked at bottom of both pages
+- Users want to be able to easily exit the game
+            An x button has been created, which doesn't affect user's score
+- Users want to be able to reset the game
+            Reset button clears the score count
+
+- The owners want to make the game easy to understand
+            Instructions have been provided for the game
+- The owners want to make sure game isn't too complicated
+            Options are typically limited to 2. Language is easy to understand.
+- The owners want to promote competitiveness to encourage people sharing the game with their friends
+            Scores can be screenshot for comparison (No cheating now ;) )
+- The owners want to make it clear if each ending counts as a win or loss
+            When you win a positive jingle sounds, and the background turns green. Win tally goes up.
+            When you lose a more negative tone sounds, the background turns red and the lose tally goes up.
+
 
 ### 3.2 Future Features
 
-Things I would like to add in the future
+- A mute button to give player the option to play without sounds.
+At my current level I couldn't find a way to mute my audio using vanilla Javascript, as the audio is initiataed by the user using JavaScript.
 
 ## 4 Technologies and Resources Used
 
@@ -123,20 +177,21 @@ This project uses vanilla JavaScript, meaning no external frameworks have been u
 
 ### Programmes and Libraries Used
 
-- [Balsamiq](https://balsamiq.com/tutorials/) - used to build framework.
+- [Balsamiq](https://balsamiq.com/tutorials/) used to build framework.
 - [Chrome devtools](https://developer.chrome.com/docs/devtools/) used for finding quick solutions to design issues and visualising the site on different screen sizes for making media queries.
 - [Font Awesome](https://fontawesome.com/) used to source social media icons
 - [Git](https://git-scm.com/) used for version control of my site and pushing code to GitHub
-- [GitHub](https://github.com/) is the cloud storage system for my projects. The location of this site's repository, and place to deploy site.
-- [GitPod](https://gitpod.io/) is the IDE used to write and preview the code for this website.
-- [TinyJPG](https://tinypng.com/) is the site used to compress images used without compromising the quality.
-
+- [GitHub](https://github.com/) the cloud storage system for my projects. The location of this site's repository, and place to deploy site.
+- [GitPod](https://gitpod.io/) the IDE used to write and preview the code for this website.
+- [TinyJPG](https://tinypng.com/) used to compress images used without compromising the quality.
+- [Adobe Spark]() used to create the backgrounds.
+- [Coolers]() used to pick my colours for the website
 
 ### Resources for code
 
-As a beginner, my project was mostly designed using code provided in the Code Institute lessons and example projects.
-I also used many youtube tutorials for designing quizzes and text based adventure games.
-I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https://stackoverflow.com/) and [CSS tricks](https://css-tricks.com/) for general hints. 
+I relied heavily on the Love Maths project and lessons provided by the Code Institute. 
+Before writing my code I researched different tutorials for creating games, and found [this YouTube tutorial](https://www.youtube.com/watch?v=R1S_NhKkvGA) particularly helpful.
+I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https://stackoverflow.com/), [MDN web docs](https://developer.mozilla.org) and [code grepper](https://codegrepper.com) for troubleshooting. 
 
 ## 5 Testing
 
@@ -147,7 +202,9 @@ I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https
 - HTML was validated using [W3C markup validator](https://validator.w3.org/).  
 
 
-- CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/).  
+- CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/). 
+
+- JavaScript was validated using [JSHint](https://jshint.com/)
 
 
 ### 5.2 Accessibility test
@@ -161,15 +218,31 @@ I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https
 
 ### 5.4 Manual testing
 
-The live link was sent to multiple people for feedback on ...
+The live link was sent to multiple people for feedback on functionality and design.
 
-#### Features on each page
+- Title logo: Should appear at the top of both pages and on the game page, should redirect to the landing page if clicked.
+- Play button: Should bring user to the start of the game.
+- How to play button: Should display instructions on screen for how to play the game. A 'x' button allows user to exit the instructions.
+- Score tally: Should display 0 if never played before or score was reset, and should display previous score so long as user hasn't cleared cache.
+- Exit button: An 'x' button on the game page to bring user back to the landing page. Does not count as a loss.
+- Clear scores button: The scores are reset to 0.
+- When user clicks an option, the scenario changes to the appropriate follow-up scenario.
+- When user clicks a winning option, a happy jingle sounds and win score is incremented by 1.
+- When user clicks a losing option, a low buzzer sounds and lose score is incremented by 1.
+- Every time an option is picked, the background changes to match the scenario.
 
 ## 6 Bugs
 
 ***
 
 ## Fixed / solved
+
+- After local storage for scores was implemented, the old score would be displayed, but when played through the score would reset instead of adding to it. Fixed by moving oldwin/oldLoss variables.
+- When a second HTML and JS file was created, the scores wouldn't display on the home screen. NaN. Function had to be rewritten
+- New users don't have a starting score - displays NaN. Needed an if function to check if localStorage existed. Had to do this a couple of times - yay cookies.
+- When deployed on Slack peer review channel game wasnt playable - 404 error. Needed to change action location in forms.
+- HTML + CSS reset a few steps back.. don't know why
+
 
 ## Still exisiting
 
@@ -180,32 +253,48 @@ The live link was sent to multiple people for feedback on ...
 ***
 
 - Sign in to the [GitHub](https://github.com/) website. Go to list of repositories.
-- In the github repository section find "ENTER REPO NAME HERE"
+- In the github repository section find "the-sealiest-game-you-will-play-today"
 - Go to the settings tab located in the menu running across the top of the repository, denoted by a cog icon.
 - Click 'Pages' in the navbar on the left.
 - Swap source branch from none to master
 - Press the save button
 - Wait a few minutes while your page is being built.
-- A highlighted banner should be displayed on the page saying "Your site is published at ... " with a tick icon to the left of it.
+- A highlighted banner should be displayed on the page saying "Your site is published at <https://hartnetl.github.io/the-sealiest-game-you-will-play-today/> " with a tick icon to the left of it.
 - The site is now live.
-
-The deployed site: 
 
 ## 8 Credits
 
 ***
 
-### Content
+### Sounds
 
+winBell.mp3  
+<https://freesound.org/people/MattLeschuck/sounds/511484/>  
+MattLeschuck  
 
-
-### Images
-
+loseTone.mp3  
+<https://freesound.org/people/KevinVG207/sounds/331912/>  
+kevinVG207
 
 
 ### Code for things I didn't know how to do
 
+Youtube tutorial  
+Build A Text Adventure Game With JavaScript - Web Dev Simplified  
+<https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js>  
+
+Storage function help  
+<https://developer.mozilla.org/en-US/docs/Web/API/Storage>  
+
+Modal help  
+<https://www.w3schools.com/howto/howto_css_modals.asp>  
+
+Play sounds  
+<https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js>  
 
 
 ## 9 Acknowledgements
 
+A huge thank you to my class tutor Kasia, my mentor Maria and all of the slack community. Your help and support keeps me motivated.    
+Thank you to the staff at Tutor Support who are amazingly helpful at prodding me in the right direction when I hit a wall.  
+And a massive shoutout to everyone who was subjected to testing this game, especially those who played it numerous times. You're all stars!  
