@@ -247,13 +247,13 @@ let scenarios = [
         background: "url('assets/images/turtles.png')",
         response: [
             {
+                option: "No way! That seems like a bad idea.",
+                goTo: 10,
+            },
+            {
                 option: "You're not one to shy away from a challenge. Let's pet that weirdly adorable little head.",
                 outcome: 'lose',
                 goTo: 11,
-            },
-            {
-                option: "No way! That seems like a bad idea.",
-                goTo: 10,
             }
         ],
     },
@@ -329,7 +329,7 @@ let scenarios = [
     },
     {
         id: 16,
-        background: "url('assets/images/tarantula-lose.png')",
+        background: "url('assets/images/tarantula-end.png')",
         message: "The good news is you succeeded in making her mad and she bit you. The bad news is you did not get superpowers or spidey senses, and the reptile keeper just kicked you out.",
         response: [
             {
