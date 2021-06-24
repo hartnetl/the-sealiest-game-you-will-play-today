@@ -85,6 +85,10 @@ h2 {
     margin-top: 5%;
 }
 
+#last-scores span {
+    margin: 0 5%;
+}
+
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
 /* Set up the modal and background */
 .modal {
@@ -123,6 +127,10 @@ h2 {
     background-image: url('../images/zoo.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#exit {
+    margin-right: 1%;
 }
 
 /* The main text box on the page */
@@ -285,6 +293,9 @@ h2 {
     #last-scores {
         padding: 1%;
         width: 74%;
+    }
+    #last-scores span {
+        margin-right: 15%;
     }
 
     #exit {
