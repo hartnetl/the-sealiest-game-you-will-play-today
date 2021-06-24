@@ -149,14 +149,14 @@ let scenarios = [
         message: "You waited patiently in the queue for 30 minutes and your finally get it. First stop - the penguin feeding! While you're there the zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
+                option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
+                goTo: 5
+            },
+            {
                 option: "Take the penguin while no one is looking.",
                 outcome: 'lose',
                 goTo: 4
             },
-            {
-                option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
-                goTo: 5
-            }
         ],
     },
     {
@@ -192,14 +192,15 @@ let scenarios = [
         background: "url('assets/images/sea-lion.png')",
         response: [
             {
+                option: "Better give one of these kids a chance to do it.",
+                goTo: 7
+            },
+            {
                 option: "Pick me! Pick me!",
                 outcome: 'lose',
                 goTo: 6
-            },
-            {
-                option: "Better give one of these kids a chance to do it.",
-                goTo: 7
             }
+            
         ],
     },
     {
@@ -246,13 +247,13 @@ let scenarios = [
         background: "url('assets/images/turtles.png')",
         response: [
             {
-                option: "No way! That seems like a bad idea.",
-                goTo: 10,
-            },
-            {
                 option: "You're not one to shy away from a challenge. Let's pet that weirdly adorable little head.",
                 outcome: 'lose',
                 goTo: 11,
+            },
+            {
+                option: "No way! That seems like a bad idea.",
+                goTo: 10,
             }
         ],
     },
@@ -359,14 +360,14 @@ let scenarios = [
                 goTo: 18,
             },
             {
+                option: "To the wolves! They're nocturnal, right?!",
+                goTo: 20,
+            },
+            {
                 option: "Meerkat time! I've loved them since before the ad came out.",
                 outcome: 'win',
                 goTo: 19,
-            },
-            {
-                option: "To the wolves! They're nocturnal, right?!",
-                goTo: 20,
-            }
+            }            
         ],
     },
     {
@@ -397,13 +398,13 @@ let scenarios = [
         message: "The wolves are loud as you approach. They're on the hunt. You see a rabbit dodging and weaving in the enclosure. How did that get there? Silly rabbit",
         response: [
             {
+                option: "Watch nature take its course. Survival of the fittest and all that.",
+                goTo: 22,
+            },
+            {
                 option: "Howl like a wolf. That'll distract them",
                 outcome: 'lose',
                 goTo: 21,
-            },
-            {
-                option: "Watch nature take its course. Survival of the fittest and all that.",
-                goTo: 22,
             }
         ],
     },
