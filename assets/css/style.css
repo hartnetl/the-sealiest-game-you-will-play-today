@@ -71,6 +71,7 @@ h2 {
 .h-btn:hover {
     background-color: #462255;
     box-shadow: 5px 5px 5px 5px #2d1636;
+    cursor: pointer;
 }
 
 /* Score box on landing page */
@@ -134,6 +135,12 @@ h2 {
 
 #exit {
     margin-right: 1%;
+    background:none;
+    color: #462255;
+}
+
+#exit:hover {
+    cursor: pointer;
 }
 
 /* The main text box on the page */
@@ -164,6 +171,7 @@ h2 {
     padding: 1%;
     background-color: rgb(170, 68, 101);
     color: rgb(147, 225, 216);
+    cursor: pointer;
 }
 
 /* Style the score box */
