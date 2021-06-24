@@ -207,6 +207,7 @@ h2 {
 #exit {
     float: right;
     font-size: 30px;
+    background: none;
 }
 
 #exit a {
@@ -215,6 +216,7 @@ h2 {
 
 #exit a:hover {
     color: white;
+    cursor: pointer;
 }
 
 /* Media query for large tablet - 1024 px*/
