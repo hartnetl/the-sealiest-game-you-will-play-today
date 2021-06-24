@@ -185,7 +185,8 @@ This project uses vanilla JavaScript, meaning no external frameworks have been u
 - [GitPod](https://gitpod.io/) the IDE used to write and preview the code for this website.
 - [TinyJPG](https://tinypng.com/) used to compress images used without compromising the quality.
 - [Adobe Spark]() used to create the backgrounds.
-- [Coolers]() used to pick my colours for the website
+- [Coolers]() used to pick my colours for the website.
+- [Favicon](https://favicon.io/emoji-favicons/giraffe) used to make the favicon in the browser tab of the website.
 
 ### Resources for code
 
