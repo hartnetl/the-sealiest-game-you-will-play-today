@@ -15,12 +15,16 @@ body {
 }
 
 /*Style h1 - the game title */
-h1 {
+h1, h1 a {
     text-align: center;
     color: #462255;
     font-family: 'Kirang Haerang', cursive;
     background-color: rgb(147, 225, 216);
     font-size: 3.5rem;
+}
+
+h1 a {
+    text-decoration: none;
 }
 
 /* Set background colour in case images don't load */
@@ -43,11 +47,15 @@ h2 {
     margin: 5vh auto;
 }
 
+#play {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Style those buttonws */
 .h-btn {
     width: 40vw;
     height: 15vh;
-    border: 2px solid #aa4465;
     margin: 3% auto;
     background-color: #aa4465;
     border-radius: 15px;
@@ -65,7 +73,6 @@ h2 {
 
 /* Change the colour of the buttons when hovered over */
 .h-btn:hover {
-    border: 2px solid #462255;
     background-color: #462255;
     box-shadow: 5px 5px 5px 5px #2d1636;
     cursor: pointer;
@@ -146,6 +153,12 @@ h1 a {
 
 #exit {
     margin-right: 1%;
+    background:none;
+    color: #462255;
+}
+
+#exit:hover {
+    cursor: pointer;
 }
 
 /* The main text box on the page */
@@ -169,7 +182,6 @@ h1 a {
 
 /* style the buttons */
 .btn {
-    border: 1px solid rgb(170, 68, 101);
     width: 85vw;
     margin: 1% auto;
     font-size: 1rem;
@@ -177,6 +189,7 @@ h1 a {
     padding: 1%;
     background-color: rgb(170, 68, 101);
     color: rgb(147, 225, 216);
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -379,7 +392,7 @@ h1 a {
     #text-box {
         font-size: 1.1rem;
         margin: 5% auto;
-        height: vh;
+        height: 40vh;
     }
 
     .btn {

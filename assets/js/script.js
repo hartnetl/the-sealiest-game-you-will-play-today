@@ -7,48 +7,49 @@ let optionButtons = document.getElementById('buttons-container');
 let winSound = new Audio('assets/sounds/winBell.mp3');
 let loseSound = new Audio ('assets/sounds/losetone.mp3');
 
-// Assign variables to images
+// // Assign variables to images
 let bgImage = document.getElementById('game-bg');
-let queue = new Image('assets/images/queue.jpg');
+
 
 // Create funtion to start the game
 
 function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
-    displayScenario('intro')
-    displayScores()
-};
+    displayScenario('intro');
+    displayScores();
+}
 
 // This function learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
 
 function displayScenario (scenarioIndex) {
     // This finds the desired scenario needed by ID
-        let scenario = scenarios.find(scenario => scenario.id === scenarioIndex)
+        let scenario = scenarios.find(scenario => scenario.id === scenarioIndex);
     // This changes the text displaying in the text box to the text within the newly targeted scenario
-        scenarioText.textContent = scenario.message
+        scenarioText.textContent = scenario.message;
     // This changes the background image for each scenario 
-        bgImage.style.backgroundImage = scenario.background
+        bgImage.style.backgroundImage = scenario.background;
     // This removes an option button as long as our element optionButtons has a first child
         while (optionButtons.firstChild) {
-            optionButtons.removeChild(optionButtons.firstChild)
+            optionButtons.removeChild(optionButtons.firstChild);
         }
+
     // The option buttons need to be added back in with the desired text from each scenario using a loop
     // We access each response in a scenario and apply the forEach method to apply a new function (respond) to each item in the array
         scenario.response.forEach(respond => {
             // Create the button
-            let optionButton = document.createElement('button')
+            let optionButton = document.createElement('button');
             // Change the text content of the button to the text of the new option
-            optionButton.textContent = respond.option
+            optionButton.textContent = respond.option;
             // Add the class to allow css to stlye it properly
-            optionButton.classList.add('btn')
+            optionButton.classList.add('btn');
             // Add an event listener so when an option button is clicked the right buttons are created
-            optionButton.addEventListener('click', () => optionResponse(respond))
+            optionButton.addEventListener('click', () => optionResponse(respond));
             // Add the new option button back to the buttons-container div
-            optionButtons.appendChild(optionButton)
-        })
-    };
+            optionButtons.appendChild(optionButton);
+        });
+    }
 
     
 // Check if option has an outcome, and respond accordingly
@@ -68,25 +69,25 @@ function optionResponse(respond) {
         storeScores();
         displayScenario(respond.goTo);
     }
-};
+}
 
 // A function to increase number of times user made it to the end
 function addWin() {
     let oldWin = parseInt(document.getElementById('win').innerText);
     document.getElementById('win').innerText = ++oldWin;
-};
+}
 
 // A function to increase the number of times user lost and had to start again
 function addLoss() {
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
-};
+}
 
 // A function to store scores in local storage
 function storeScores() {
     localStorage.setItem('wins', document.getElementById('win').innerText);
     localStorage.setItem('losses', document.getElementById('lose').innerText);
-};
+}
 
 // A function to retrieve data in localStorage and set is as the value for the win and lose html elements
 function displayScores() {
@@ -99,7 +100,7 @@ function displayScores() {
     } else {
     document.getElementById('win').innerText = myWins;
     document.getElementById('lose').innerText = myLosses;
-}};
+}}
 
 // A function to allow user to reset their score manually 
 let clearScoreButton = document.getElementById('clear');
@@ -111,8 +112,8 @@ function resetScore() {
     localStorage.setItem('wins', 0);
     localStorage.setItem('losses', 0);
 
-    displayScores()
-};
+    displayScores();
+}
 
 // Create an array to hold all of the scenarios as objects containing the body text and option text
 
