@@ -23,6 +23,10 @@ h1 {
     font-size: 3.5rem;
 }
 
+h1 a {
+    text-decoration: none;
+}
+
 /* Set background colour in case images don't load */
 html {
     background-color: #93e1d8;
