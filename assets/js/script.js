@@ -10,7 +10,6 @@ let loseSound = new Audio ('assets/sounds/losetone.mp3');
 // // Assign variables to images
 let bgImage = document.getElementById('game-bg');
 
-
 // Create funtion to start the game
 
 function runGame() {
@@ -166,13 +165,13 @@ let scenarios = [
         message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
+                option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
+                goTo: 5
+            },
+            {
                 option: "Take the penguin while no one is looking.",
                 outcome: 'lose',
                 goTo: 4
-            },
-            {
-                option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
-                goTo: 5
             }
         ],
     },
@@ -220,14 +219,14 @@ let scenarios = [
         message: "A kid gets chosen as the volunteer and performs some cool tricks with the sea lions. Man that looks cool. That should have been you. Being the mature person you are, you move on to the next enclosure with minimal sulking. You arrive at the gorillas. A huge silverback is patrolling near where you are.",
         response: [
             {
+                option: "Watching gorillas is hungry work. Let's eat while we watch.",
+                goTo: 9
+            },
+            {
                 option: "Show that gorilla who's boss! Beat your chest at him.",
                 outcome: 'lose',
                 goTo: 8
-            },
-            {
-                option: "Watching gorillas is hungry work. Let's eat while we watch.",
-                goTo: 9
-            }
+            }            
         ],
     },
     {
@@ -247,13 +246,13 @@ let scenarios = [
         background: "url('assets/images/turtles.png')",
         response: [
             {
-                option: "No way! That seems like a bad idea.",
-                goTo: 10,
-            },
-            {
                 option: "You're not one to shy away from a challenge. Let's pet that weirdly adorable little head.",
                 outcome: 'lose',
                 goTo: 11,
+            },
+            {
+                option: "No way! That seems like a bad idea.",
+                goTo: 10,
             }
         ],
     },
@@ -329,7 +328,7 @@ let scenarios = [
     },
     {
         id: 16,
-        background: "url('assets/images/tarantula-lose.png')",
+        background: "url('assets/images/tarantula-end.png')",
         message: "The good news is you succeeded in making her mad and she bit you. The bad news is you did not get superpowers or spidey senses, and the reptile keeper just kicked you out.",
         response: [
             {
@@ -398,13 +397,13 @@ let scenarios = [
         message: "The wolves are loud as you approach. They're on the hunt. You see a rabbit dodging and weaving in the enclosure. How did that get there? Silly rabbit",
         response: [
             {
+                option: "Watch nature take its course. Survival of the fittest and all that.",
+                goTo: 22,
+            },
+            {
                 option: "Howl like a wolf. That'll distract them",
                 outcome: 'lose',
                 goTo: 21,
-            },
-            {
-                option: "Watch nature take its course. Survival of the fittest and all that.",
-                goTo: 22,
             }
         ],
     },
@@ -440,13 +439,13 @@ let scenarios = [
         message: "You chase after the rabbit. You think you hear a voice. Could it be... the rabbit? Nah, it's probably the security guard finally noticing you.",
         response: [
             {
+                option: "Hide.",
+                goTo: 26,
+            },
+            {
                 option: "Keep following the rabbit.",
                 outcome: 'win',
                 goTo: 25,
-            },
-            {
-                option: "Hide.",
-                goTo: 26,
             }
         ],
     },
