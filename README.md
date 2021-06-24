@@ -8,7 +8,8 @@ Live site: [Name of the page](the live link)
 
 Project Aim: Use vanilla JavaScript to build a text adventure game
 
-A brief introduction to the site 
+'A day at the zoo' is a fun text-based storybook adventure game. As a player you will be presented with different scenarios and a couple of ways to respond.   
+The story will take you through, as I'm sure you guessed, a day at the zoo. But be warned, while a day at the zoo seems nice and straight forward, danger lurks just around the corner...
 
 
 1. [Introduction](#1-introduction)
@@ -37,33 +38,48 @@ A brief introduction to the site
 
 ***
 
-Broad overview - who is this page / site / game aimed towards
+Text adventure games have become a fairly niche area of gaming, but with the rise in popularity of text based games such as Telltale's Walking Dead there's some hope for this genre yet.  
+This game aims to bring nostalgia to those that played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing.
+
 
 ### 2.1 Strategy
 
 #### User Goals
 
-What do users want to gain by using this site 
+Users are looking to play a fun text based adventure game, with replayability and some form of competitiveness.
 
 #### Project goals
 
-What do I hope to gain by making and sharing this game
+By making this game I hope to shine a light on the overlooked genre of text adventure games. It's a different pace for playing a computer game, but a refreshing one in my opinion.
+The story takes an ordinary day at the zoo and turns it on its head. I want to capture the player's curiosity and attention to make them want to replay the game and find the different ways to end the game.
 
 #### User Stories
 
-- Users want to ....
+- Users want to play a game that functions correctly and flows correctly
+- Users want a pleasant visual experience, with easy readability
+- Users want to be able to keep track of their score
+- Users want to be able to easily exit the game
+- Users want to be able to reset the game
 
-- The owners want to ...
+- The owners want to make the game easy to understand
+- The owners want to make sure game isn't too complicated
+- The owners want to promote competitiveness to encourage people sharing the game with their friends
+- The owners want to make it clear if each ending counts as a win or loss
 
 ### 2.2 Scope
 
-The aim of this project was.....
+The aim of this project was to build a game using vanilla JavaScript. I decided to go ahead with a text based adventure game with mutiple outcomes for the player to discover.
 
 The features to include:
 
-- a list
-- of features
-- I hope to include
+- Pop-up instructions for how to play the game
+- Option to exit the game
+- Score tracker
+- Clear score option
+- Win / lose sound to signal winning and losing options
+- Change background image to match scenario
+- Change background image to emphasize win/loss point 
+
 
 ### 2.3 Structure
 
