@@ -43,6 +43,11 @@ h2 {
     margin: 5vh auto;
 }
 
+#play {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Style those buttonws */
 .h-btn {
     width: 40vw;
