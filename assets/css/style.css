@@ -222,6 +222,32 @@ h2 {
     color: white;
 }
 
+
+/* 404 Page */
+
+#err-bod {
+    text-align: center;
+}
+
+#err-h1 {
+    font-size: 6rem;
+    margin-top: 5%;
+}
+
+#err-h2 {
+    font-size: 2.5rem;
+}
+
+#err-h3 {
+    font-size: 2rem;
+    color: #aa4465;
+}
+
+#err-h3 a {
+    text-decoration: none;
+    color: #462255;
+}
+
 /* Media query for large tablet - 1024 px*/
 
 @media screen and (max-width: 1024px) {
