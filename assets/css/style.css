@@ -355,7 +355,7 @@ h2 {
 
     #text-box {
         font-size: 1.5rem;
-        height: 42vh;
+        height: auto;
     }
 
     .btn {
@@ -396,9 +396,10 @@ h2 {
     }
 
     #text-box {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin: 5% auto;
-        height: 40vh;
+        height: 35vh;
+        margin-top: 10vh;
     }
 
     .btn {
@@ -409,3 +410,9 @@ h2 {
         font-size: 1rem;
     }
 }
+
+/* @media screen and (max-width: 321px) {
+    #text-box {
+        margin-top: 5%; 
+   }
+} */
