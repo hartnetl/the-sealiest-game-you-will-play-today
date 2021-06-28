@@ -218,19 +218,23 @@ h2 {
 
 /* ______________404 Page________________ */
 
+/* The body of the 404 page */
 #err-bod {
     text-align: center;
 }
 
+/* h1 of error page */
 #err-h1 {
     font-size: 6rem;
     margin-top: 5%;
 }
 
+/* h2 of error page */
 #err-h2 {
     font-size: 2.5rem;
 }
 
+/* h3 of error page */
 #err-h3 {
     font-size: 2rem;
     color: #aa4465;
