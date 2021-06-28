@@ -21,14 +21,14 @@
 
 <body id="game-bg">
     <!-- Title header -->
-    <section id="title">
+    <header id="title">
         <!-- 'x' button closes game and brings player back to the home page-->
         <form method="get" action="https://hartnetl.github.io/the-sealiest-game-you-will-play-today/index.html">
             <button id="exit">&times;</button>
          </form>
          <!-- The title on this page links to the home page-->
         <h1><a href="index.html">ZOOQUEST</a></h1>
-    </section>
+        </header>
 
     <!-- The game area of the page -->
     <section id="game-space">
@@ -44,7 +44,7 @@
     </section>
    
     <!-- The space for scores to be displayed -->
-    <section id="score-space">
+    <footer id="score-space">
         <div id="scores">
             <!--Score counter-->
             <span class="count">Completed: <span id="win">0</span></span>
@@ -52,7 +52,7 @@
             <!--Button to reset scores-->
             <button id="clear">Clear Score</button>
         </div>
-    </section>
+    </footer>
 
     <!-- Link "script.js" javascript file-->
     <script src="assets/js/script.js"></script>

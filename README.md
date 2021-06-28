@@ -242,7 +242,9 @@ Configure setting were changed to accept ES6 Javascript features
 
 ### 5.2 Accessibility test
 
-- Accessibility of the site was tested with [WAVE(Web Accessibility Evaluation Tool)](https://wave.webaim.org/).  
+- Accessibility of the site was tested with [WAVE (Web Accessibility Evaluation Tool)](https://wave.webaim.org/).  
+index.html results are [here](assets/readme-files/wave-index.png). No errors were returned and no contrast issues were detected. There was an aria alert as this page doesn't have a header, footer etc as it is not a standard web page.
+game.html results are [here](assets/readme-files/wave-game.png).  
 
 
 ### 5.3 Performance test
