@@ -82,8 +82,7 @@ h2 {
 #last-scores {
     display: block;
     margin: 0 auto;
-    border: 1px groove #d18781;
-    box-shadow: 2px 2px 2px 2px #d18781;
+    box-shadow: 2px 2px 3px 3px #d18781;
     width: 40vw;
     background-color: #ffa69e;
     border-radius: 5px;
