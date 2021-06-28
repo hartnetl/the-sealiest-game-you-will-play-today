@@ -1,5 +1,4 @@
 // Assign variables to be able to target textbox and option button text
-
 let scenarioText = document.getElementById('text-box');
 let optionButtons = document.getElementById('buttons-container');
 
@@ -7,11 +6,14 @@ let optionButtons = document.getElementById('buttons-container');
 let winSound = new Audio('assets/sounds/winBell.mp3');
 let loseSound = new Audio ('assets/sounds/losetone.mp3');
 
-// // Assign variables to images
+// Assign variables to background images
 let bgImage = document.getElementById('game-bg');
 
-// Create funtion to start the game
-
+// Funtion to start the game
+/**
+ * Starts the game displaying the intro scenario and the latest score
+ * the player had, or 0 if the player is new 
+ */
 function runGame() {
     // The intro message needs to display in text section
     // One option button needs to display with text "Take me to the zoo"
@@ -19,76 +21,112 @@ function runGame() {
     displayScores();
 }
 
-// This function learned from "Web Dev Simplified" on youtube
+// This game function to call scenarios and options for the game as required
+// was learned from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
 
+/**
+ * This function brings up each scenario and its associated features as required. 
+ * The objects in the scenario array are called to display the main
+ * scenario text, the option buttons are created as needed with the correct text 
+ * inside them and change the background image to match the scenario.
+ */
 function displayScenario (scenarioIndex) {
-    // This finds the desired scenario needed by ID
+    // Find the desired scenario needed by ID
         let scenario = scenarios.find(scenario => scenario.id === scenarioIndex);
-    // This changes the text displaying in the text box to the text within the newly targeted scenario
+    // Change the text currently in the text box to the text of the newly targeted scenario
         scenarioText.textContent = scenario.message;
-    // This changes the background image for each scenario 
+    // Change the background image for each scenario 
         bgImage.style.backgroundImage = scenario.background;
-    // This removes an option button as long as our element optionButtons has a first child
+    // Remove the html buttons - these will be recreated below
         while (optionButtons.firstChild) {
             optionButtons.removeChild(optionButtons.firstChild);
         }
 
-    // The option buttons need to be added back in with the desired text from each scenario using a loop
-    // We access each response in a scenario and apply the forEach method to apply a new function (respond) to each item in the array
+    // Recreate the buttons as required for each scenario
         scenario.response.forEach(respond => {
             // Create the button
             let optionButton = document.createElement('button');
             // Change the text content of the button to the text of the new option
             optionButton.textContent = respond.option;
-            // Add the class to allow css to stlye it properly
+            // Add the class for css styling
             optionButton.classList.add('btn');
-            // Add an event listener so when an option button is clicked the right buttons are created
+            // Add an event listener so the scenario changes to the option clicked
             optionButton.addEventListener('click', () => optionResponse(respond));
             // Add the new option button back to the buttons-container div
             optionButtons.appendChild(optionButton);
         });
     }
 
-    
 // Check if option has an outcome, and respond accordingly
+/**
+ * This function chooses how to respond when an option button is clicked.
+ * If there is no outcome in the array for that scenario, it will just move the game
+ * to the next scenario as chosen by the player.
+ * If there is a win outcome it will also play a win sound and increase the win score 
+ * by 1.
+ * If there is a lose outcome it will play a losing tone and the loss score is increased by 1.
+ */
 function optionResponse(respond) {
-
+    // If  no outcome, just change to the clicked scenario
     if (respond.outcome == null) {
         displayScenario(respond.goTo);
+    //if you pick a winning out
     } else if (respond.outcome == "win") {
+        // Increase the value of the winning score
         addWin();
+        // Play the winning sound
         winSound.play();
+        // Store the new value for wins in local storage
         storeScores();
+        // Move to the chosen scenario
         displayScenario(respond.goTo);
-        
+    // If you pick a losing outcome
     } else if (respond.outcome == "lose") {
+        //Increase the loss score by 1
         addLoss();
+        // Play the losing sound
         loseSound.play();
+        // Store the new value for losses in local storage
         storeScores();
+        // Move to the chosen scenario
         displayScenario(respond.goTo);
     }
 }
 
 // A function to increase number of times user made it to the end
+/**
+ * Target the 'win' element in the html file and increment the value by 1 when called
+ */
 function addWin() {
     let oldWin = parseInt(document.getElementById('win').innerText);
     document.getElementById('win').innerText = ++oldWin;
 }
 
 // A function to increase the number of times user lost and had to start again
+/**
+ * Target the 'lose' element in the html file and increment the value by 1 when called
+ */
 function addLoss() {
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
 }
 
 // A function to store scores in local storage
+/**
+ * Stores the value of 'win' and 'lose' in the html into local storage so players can
+ * see their previous score even if page is closed - so long as browser cache isn't cleared
+ */
 function storeScores() {
     localStorage.setItem('wins', document.getElementById('win').innerText);
     localStorage.setItem('losses', document.getElementById('lose').innerText);
 }
 
 // A function to retrieve data in localStorage and set is as the value for the win and lose html elements
+/**
+ * If local storage is empty, the scores are set to 0. If there are values entered into local 
+ * storage, these values are displayed instead
+ */
 function displayScores() {
     let myWins = localStorage.getItem('wins');
     let myLosses = localStorage.getItem('losses');
@@ -101,9 +139,11 @@ function displayScores() {
     document.getElementById('lose').innerText = myLosses;
 }}
 
-// A function to allow user to reset their score manually 
+// A function to allow user to reset their score manually
 let clearScoreButton = document.getElementById('clear');
-
+/**
+ * By clicking the 'clear score' button, the values of wins and losses are set to 0
+ */ 
 function resetScore() {
     localStorage.removeItem('wins');
     localStorage.removeItem('losses');
@@ -114,7 +154,8 @@ function resetScore() {
     displayScores();
 }
 
-// Create an array to hold all of the scenarios as objects containing the body text and option text
+// An array to hold all of the scenarios as objects containing the scenario ID, the body text, 
+// options content, next scenario to display ID (goTO), outcome (when needed) and the background image location
 
 let scenarios = [
     {
@@ -529,6 +570,8 @@ let scenarios = [
     },
 ];
 
+// Start the game 
 runGame();
 
+// Add event listener to reset the score whenever the button is clicked
 clearScoreButton.addEventListener('click', resetScore);
