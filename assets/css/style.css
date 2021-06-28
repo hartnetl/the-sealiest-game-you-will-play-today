@@ -408,8 +408,9 @@ h2 {
     }
 }
 
-/* @media screen and (max-width: 321px) {
+ @media screen and (max-width: 321px) {
     #text-box {
-        margin-top: 5%; 
+        height: auto;
+        margin-top: 5%;
    }
-} */
+} 
