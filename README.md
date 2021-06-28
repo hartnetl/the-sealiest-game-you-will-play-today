@@ -140,39 +140,39 @@ Each image relates to the scenario, depicting the animal being viewed or the pla
 - Users want a pleasant visual experience, with easy readability
     - Feature:  
     Fonts have contrast to background, text box has full opacity, backgrounds are entertaining  
-    <img src="assets/images/readme-files/feature-visuals.png" alt="mobile visuals" width="90" height="150"> 
-    <img src="assets/images/readme-files/feature-visuals-2.png" alt="desktop visuals" width="280" height="150">  
+    <img src="assets/readme-files/feature-visuals.png" alt="mobile visuals" width="90" height="150"> 
+    <img src="assets/readme-files/feature-visuals-2.png" alt="desktop visuals" width="280" height="150">  
 - Users want to be able to keep track of their score
     - Feature:  
      Score is tracked at bottom of both pages  
-     <img src="assets/images/readme-files/score.png" alt="score tracker">
+     <img src="assets/readme-files/score.png" alt="score tracker">
 - Users want to be able to easily exit the game
     - Feature:  
     An x button has been created, which doesn't affect user's score  
-    <img src="assets/images/readme-files/exit.png" alt="exit button">
+    <img src="assets/readme-files/exit.png" alt="exit button">
 - Users want to be able to reset the game
     - Feature:   
     Reset button clears the score count  
-    <img src="assets/images/readme-files/reset.png" alt="reset score button">
+    <img src="assets/readme-files/reset.png" alt="reset score button">
 - The owners want to make the game easy to understand
     - Feature:  
     Instructions have been provided for the game  
-    <img src="assets/images/readme-files/instructions.png" alt="pop up instructions">  
+    <img src="assets/readme-files/instructions.png" alt="pop up instructions">  
 - The owners want to make sure game isn't too complicated
     - Feature:  
     Options are typically limited to 2. Language is easy to understand.  
-    <img src="assets/images/readme-files/simples.png" alt="option buttons">
+    <img src="assets/readme-files/simples.png" alt="option buttons">
 - The owners want to promote competitiveness to encourage people sharing the game with their friends
     - Feature:  
     Scores can be screenshot for comparison (No cheating now ;) )  
-    <img src="assets/images/readme-files/competition.png" alt="screenshot your scores">
+    <img src="assets/readme-files/competition.png" alt="screenshot your scores">
 - The owners want to make it clear if each ending counts as a win or loss
     - Feature:  
     When you win a positive jingle sounds, and the background turns green. Win tally goes up.  
-    <img src="assets/images/readme-files/win.png" alt="win screen example">
+    <img src="assets/readme-files/win.png" alt="win screen example">
     - Feature:  
     When you lose a more negative tone sounds, the background turns red and the lose tally goes up.
-    <img src="assets/images/readme-files/lose.png" alt="lose screen example">
+    <img src="assets/readme-files/lose.png" alt="lose screen example">
 
 ### 3.2 Future Features
 
@@ -221,10 +221,23 @@ I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https
 
 - HTML was validated using [W3C markup validator](https://validator.w3.org/).  
 
+    #### index.html     
+    - On the first validation there were 2 error types returned.  
+    A tags are not allowed in button elements, so these were changed to buttons in form tags to redirect the page.  
+    The chrome icons for the favicon had an incompatible rel so this was changed.
+    - The most recent validation shows no errors, but two warnings regarding sections that lack headings. Details [here](assets/readme-files/index-html-val.png).  
 
-- CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/). 
+    #### game.html
+    - The first validation of this html file returned the same errors as index.html and the same changes were made.
+    - The most recent validation shows no errors, but two warnings regarding sections that lack headings. Details [here](assets/readme-files/game-html-val.png).  
 
-- JavaScript was validated using [JSHint](https://jshint.com/)
+- CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/).  
+No errors were returned [see here](assets/readme-files/css-val.png) but two warnings were raised [see here](assets/readme-files/css-val-warn.png) about my imported stylesheets - these are for the fonts. 
+
+- JavaScript was validated using [JSHint](https://jshint.com/).   
+Configure setting were changed to accept ES6 Javascript features  
+    - intro.js first returned minor syntax errors regarding missing or incorrectly placed semi colons. These were fixed and subsequently no errors were returned. Details of latest results [here](assets/readme-files/intro-jshint.png) 
+    - script.js first returned minor syntax errors regarding missing or incorrectly placed semi colons. These were fixed and subsequently no errors were returned. Details of latest results [here](assets/readme-files/script-jshint.png) 
 
 
 ### 5.2 Accessibility test
