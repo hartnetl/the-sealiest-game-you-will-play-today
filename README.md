@@ -72,13 +72,13 @@ The aim of this project was to design a project using vanilla JavaScript. I deci
 
 The features to include:
 
-- Pop-up instructions for how to play the game
-- Option to exit the game
-- Score tracker
-- Clear score option
-- Win / lose sound to signal winning and losing options
-- Change background image to match scenario
-- Change background image to emphasize win/loss point 
+- Pop-up instructions for how to play the game - JS modal
+- Option to exit the game - 'x' button when clicked will redirect to main page
+- Score tracker - A JS function to increment score
+- Clear score option - A JS function to set scores to 0
+- Win / lose sound to signal winning and losing options - A JS function to allow sounds to play at appropriate time
+- Change background image to match scenario - Use JS to change bakground and main text
+- Change background image to emphasize win/loss point - A green/red backgrounf for clarity
 
 
 ### 2.3 Structure
@@ -141,22 +141,29 @@ Each image relates to the scenario, depicting the animal being viewed or the pla
     - Feature:  
     Fonts have contrast to background, text box has full opacity, backgrounds are entertaining
 - Users want to be able to keep track of their score
-            Score is tracked at bottom of both pages
+    - Feature:  
+     Score is tracked at bottom of both pages
 - Users want to be able to easily exit the game
-            An x button has been created, which doesn't affect user's score
+    - Feature:  
+    An x button has been created, which doesn't affect user's score
 - Users want to be able to reset the game
-            Reset button clears the score count
+    - Feature:   
+    Reset button clears the score count
 
 - The owners want to make the game easy to understand
-            Instructions have been provided for the game
+    - Feature:  
+    Instructions have been provided for the game
 - The owners want to make sure game isn't too complicated
-            Options are typically limited to 2. Language is easy to understand.
+    - Feature:  
+    Options are typically limited to 2. Language is easy to understand.
 - The owners want to promote competitiveness to encourage people sharing the game with their friends
-            Scores can be screenshot for comparison (No cheating now ;) )
+    - Feature:  
+    Scores can be screenshot for comparison (No cheating now ;) )
 - The owners want to make it clear if each ending counts as a win or loss
-            When you win a positive jingle sounds, and the background turns green. Win tally goes up.
-            When you lose a more negative tone sounds, the background turns red and the lose tally goes up.
-
+    - Feature:  
+    When you win a positive jingle sounds, and the background turns green. Win tally goes up.
+    - Feature:  
+    When you lose a more negative tone sounds, the background turns red and the lose tally goes up.
 
 ### 3.2 Future Features
 
@@ -174,7 +181,7 @@ At my current level I couldn't find a way to mute my audio using vanilla Javascr
 
 [CSS](https://www.w3.org/Style/CSS/Overview.en.html): Cascading Style Sheets. It's the language used to make the web elements look better. It adds colour, positioning, fonts etc.
 
-[JavaScript][https://www.w3schools.com/js/]: JavaScript is needed to control a web page's behaviour and adds more interaction for the user. 
+[JavaScript](https://www.w3schools.com/js/): JavaScript is needed to control a web page's behaviour and adds more interaction for the user. 
 
 This project uses vanilla JavaScript, meaning no external frameworks have been used.
 
