@@ -171,7 +171,7 @@ Each image relates to the scenario, depicting the animal being viewed or the pla
 - The owners want to make it clear if each ending counts as a win or loss
     - Feature:  
     When you win a positive jingle sounds, and the background turns green. Win tally goes up.  
-    <img src="assets/readme-files/win.png" alt="win screen example">
+    <img src="assets/readme-files/win.png" alt="win screen example">  
     - Feature:  
     When you lose a more negative tone sounds, the background turns red and the lose tally goes up.
     <img src="assets/readme-files/lose.png" alt="lose screen example">
