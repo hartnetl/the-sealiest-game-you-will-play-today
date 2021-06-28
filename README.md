@@ -4,12 +4,12 @@
 
 ***
 
-Live site: [Name of the page](https://hartnetl.github.io/the-sealiest-game-you-will-play-today/)
+Live site: [ZOOQUEST](https://hartnetl.github.io/the-sealiest-game-you-will-play-today/)
 
 Project Aim: Use vanilla JavaScript to build a text adventure game
 
-'A day at the zoo' is a fun text-based storybook adventure game. As a player you will be presented with different scenarios and a couple of ways to respond.   
-The story will take you through, as I'm sure you guessed, a day at the zoo. But be warned, while a day at the zoo seems nice and straight forward, danger lurks just around the corner...
+'ZOOQUEST' is a fun text-based adventure game. As a player you will be presented with different scenarios and a couple of ways to respond.   
+The story will take you through, as I'm sure you guessed, a day at the zoo. But be warned, while a day at the zoo seems nice and relaxing, danger lurks just around the corner...
 
 
 1. [Introduction](#1-introduction)
@@ -39,7 +39,7 @@ The story will take you through, as I'm sure you guessed, a day at the zoo. But 
 ***
 
 Text adventure games have become a fairly niche area of gaming, but with the rise in popularity of text based games such as Telltale's Walking Dead there's some hope for this genre yet.  
-This game aims to bring nostalgia to those that played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing.
+This game aims to bring nostalgia to those that have played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing and hopefully with that, the incentive to play it over and over until all winning options are found.
 
 
 ### 2.1 Strategy
@@ -50,12 +50,12 @@ Users are looking to play a fun text based adventure game, with replayability an
 
 #### Project goals
 
-By making this game I hope to shine a light on the overlooked genre of text adventure games. It's a different pace for playing a computer game, but a refreshing one in my opinion.
-The story takes an ordinary day at the zoo and turns it on its head. I want to capture the player's curiosity and attention to make them want to replay the game and find the different ways to end the game.
+By making this game I hope to shine a light on the commonly overlooked genre of text adventure games. It's a different pace for playing a computer game, but a refreshing one in my opinion.
+The story takes an ordinary day at the zoo and turns it on its head. I want to capture the player's curiosity and attention to make them want to replay the game and find all the different ways to end the game.
 
 #### User Stories
 
-- Users want to play a game that functions correctly and flows correctly
+- Users want to play a game that functions and flows correctly
 - Users want a pleasant visual experience, with easy readability
 - Users want to be able to keep track of their score
 - Users want to be able to easily exit the game
@@ -68,7 +68,7 @@ The story takes an ordinary day at the zoo and turns it on its head. I want to c
 
 ### 2.2 Scope
 
-The aim of this project was to build a game using vanilla JavaScript. I decided to go ahead with a text based adventure game with mutiple outcomes for the player to discover.
+The aim of this project was to design a project using vanilla JavaScript. I decided to go ahead with a text based adventure game with mutiple outcomes for the player to discover.
 
 The features to include:
 
@@ -100,33 +100,33 @@ The game will have two pages, with simple styling:
 
 ### 2.4 Skeleton
 
-The game has a very simple, but fun layout. The background will change to match the scenario being displayed.
-
+The game has a very simple, easy to follow layout. The background changes to match the scenario being displayed.
 
 ### 2.5 Surface
 
 #### Aesthetic
 
-The game has a simple layout, with simple styling to match. 
+The game has a simple layout, with simple styling to match. The backgrounds are tile-designed with repeated images to relate to each scenario.
 
 #### Colours
 
 ![Colour palette used](assets/images/readme-files/colours.png)
 
-The game was styled using this colour palette found on [coolers.co](https://coolors.co/ddfff7-93e1d8-ffa69e-aa4465-462255).
+The game was mostly styled using this colour palette found on [coolers.co](https://coolors.co/ddfff7-93e1d8-ffa69e-aa4465-462255).
 It's a fun, warm palette with a nice level of contrast with colours.
 The background images did not follow this colour palette. 
 These included a light blue / lavendar colour for neutral scenarios, navy for night time scenarios, red for options that result in a losing point and green for options that result in a winning point.
+The reason for this change is to relate to the game scenarios, and the red and green background are to emphasize the loss/win for that scenario.
 
 #### Fonts
 
 The title font is 'Kirang Haerang'. It is a fun font that's still easy to read. 
-For the main text I chose 'Roboto' as it's an appealing font that's easy to read in buld, and sans-serif fonts are much easier to read for some people with learning difficulties.
+For the main text I chose 'Roboto' as it's an appealing font that's easy to read, and sans-serif fonts are more suitable to people with reading difficulties such as dyslexia.
 
 #### Imagery
 
 The background images were created using [Adobe Spark](https://spark.adobe.com/sp/). 
-
+Each image relates to the scenario, depicting the animal being viewed or the player's fate. Red coloured backgrounds signal a loss has been incurred and the player will be going back to the start. Green coloured backgrounds signal a win has occurred, but the player will still go back to the start to play again.
 
 ## 3 Features
 
@@ -134,10 +134,12 @@ The background images were created using [Adobe Spark](https://spark.adobe.com/s
 
 ### 3.1 Existing Features
 
-- Users want to play a game that functions correctly and flows correctly
-            The game works
+- Users want to play a game that functions correctly and flows correctly  
+    - Feature:  
+    The game works
 - Users want a pleasant visual experience, with easy readability
-            fonts have contrast to background, text box has full opacity, backgrounds are entertaining
+    - Feature:  
+    Fonts have contrast to background, text box has full opacity, backgrounds are entertaining
 - Users want to be able to keep track of their score
             Score is tracked at bottom of both pages
 - Users want to be able to easily exit the game
@@ -160,6 +162,7 @@ The background images were created using [Adobe Spark](https://spark.adobe.com/s
 
 - A mute button to give player the option to play without sounds.
 At my current level I couldn't find a way to mute my audio using vanilla Javascript, as the audio is initiataed by the user using JavaScript.
+- A contact form to allow users to make suggestions on new scenarios, to allow the game to grow.
 
 ## 4 Technologies and Resources Used
 
