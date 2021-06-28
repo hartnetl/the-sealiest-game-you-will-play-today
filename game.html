@@ -20,29 +20,36 @@
 </head>
 
 <body id="game-bg">
+    <!-- Title header -->
     <section id="title">
-        <!-- <form method="get" action="https://hartnetl.github.io/the-sealiest-game-you-will-play-today/index.html"> -->
-        <form method="get" action="index.html">
+        <!-- 'x' button closes game and brings player back to the home page-->
+        <form method="get" action="https://hartnetl.github.io/the-sealiest-game-you-will-play-today/index.html">
             <button id="exit">&times;</button>
          </form>
+         <!-- The title on this page links to the home page-->
         <h1><a href="index.html">ZOOQUEST</a></h1>
     </section>
 
+    <!-- The game area of the page -->
     <section id="game-space">
+        <!-- This text box will display each scenario text -->
         <div id="text-box">
             My text will go in here
         </div>
+        <!-- The buttons will hold the available response options-->
         <div id="buttons-container">
             <button id="option1" class="btn">Option 1</button>
             <button id="option2" class="btn">Option 2</button>
         </div>
     </section>
    
-
+    <!-- The space for scores to be displayed -->
     <section id="score-space">
         <div id="scores">
+            <!--Score counter-->
             <span class="count">Completed: <span id="win">0</span></span>
             <span class="count">Lost: <span id="lose">0</span></span>
+            <!--Button to reset scores-->
             <button id="clear">Clear Score</button>
         </div>
     </section>
