@@ -365,7 +365,7 @@ Modal help
 Play sounds  
 <https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js> 
 
-Markdown table
+Markdown table  
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables>
 
 
