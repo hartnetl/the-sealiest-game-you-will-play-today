@@ -259,22 +259,27 @@ Webpagetest results [here](assets/readme-files/webpagetest.png).
 The live link was sent to multiple people for feedback on functionality and design.  
 I played through the game myself repeatedly and no console log errors were present.
 
-- Title logo: Should appear at the top of both pages. On the game page it should redirect to the landing page if clicked. Works as expected
-- Play button: Should bring user to the start of the game.
-- How to play button: Should display instructions on screen for how to play the game. A 'x' button allows user to exit the instructions.
-- Score tally: Should display 0 if never played before or score was reset, and should display previous score so long as user hasn't cleared cache.
-- Exit button: An 'x' button on the game page to bring user back to the landing page. Does not count as a loss.
-- Clear scores button: The scores are reset to 0.
-- When user clicks an option, the scenario changes to the appropriate follow-up scenario.
-- When user clicks a winning option, a happy jingle sounds and win score is incremented by 1.
-- When user clicks a losing option, a low buzzer sounds and lose score is incremented by 1.
-- Every time an option is picked, the background changes to match the scenario.
+
+
+
+
+- 
+- 
+- 
+- 
 
 | Feature        | Expected outcome           | Does it work?  |
 | ------------- |:-------------:| -----:|
-| Title logo   | Should appear at the top of both pages. On the game page it should redirect to the landing page if clicked. | :heavy_check_mark: |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Title logo   | Appears at the top of both pages. On the game page it redirects to the landing page if clicked. | :heavy_check_mark: |
+| Play button     | Brings user to the start of the game.      |   :heavy_check_mark: |
+| How to play button | Displays instructions on screen for how to play the game.   |  :heavy_check_mark: |
+| 'x' exit button |  Closes modal / Exits game without increasing loss score.   |  :heavy_check_mark:   |
+| Score tally |  Displays '0' if never played before or score was reset, and should display previous score so long as user hasn't cleared cache.   |  :heavy_check_mark:   |
+| Clear scores button  |  Reset scores to 0   |   :heavy_check_mark:  |
+| Scenario change |  When user clicks an option, the scenario changes to the appropriate follow-up scenario.   |   :heavy_check_mark:  |
+| Win response |   When user clicks a winning option, a happy jingle sounds and win score is incremented by 1.  |   :heavy_check_mark:  |
+| Lose response |  When user clicks a losing option, a low buzzer sounds and lose score is incremented by 1.   |   :heavy_check_mark:  |
+| Background change |   Every time an option is picked, the background changes to match the scenario.  |   :heavy_check_mark:  |
 
 ## 6 Bugs
 
