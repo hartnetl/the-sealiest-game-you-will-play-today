@@ -278,30 +278,35 @@ I played through the game myself repeatedly and no console log errors were prese
 
 ## Fixed / solved
 
-- After local storage for scores was implemented, the old score would be displayed, but when played through the score would reset instead of adding to it. Fixed by moving oldwin/oldLoss variables.
-- When a second HTML and JS file was created, the scores wouldn't display on the home screen. NaN. Function had to be rewritten
-- New users don't have a starting score - displays NaN. Needed an if function to check if localStorage existed. Had to do this a couple of times - yay cookies.
-- When deployed on Slack peer review channel game wasnt playable - 404 error. Needed to change action location in forms.
-- HTML + CSS reset a few steps back.. don't know why
+- After local storage for scores was implemented, the old score would be displayed on start but when user starts playing the score would reset instead of adding to it. Fixed by moving oldwin/oldLoss variable decalarations into the score functions. 
+- When the new index.html and intro.js files were created, the scores wouldn't display on the home screen. NaN displayed fir first time users. Function had to be rewritten to include if statement to check if localStorage had score values, and if not they should be set to 0.
+- When first deployed on the Slack peer review channel the game wasnt playable - a 404 error showed. This turned out to be an issue with my location for the 'action' in my Play button on the home page.
+- During development the HTML + CSS reset a few steps back, so I lost data. I later learned later I was on a separate branch that was closed which caused conflicts when trying to merge. A lesson to keep my workspaces more organised.
 
 
 ## Still exisiting
 
+- I have no reported bugs at this time.
+
 ## Issues Faced
+
+JavaScript has been a more challenging language to learn in the given time, but one which I enjoyed. The most difficult part of building this game was starting it and getting the first couple of functions in. The more code I wrote the more I began to understand how writing functions worked, and how important their placement was.  
+
+Using background images can make a page seem busy and make text hard to read. I wanted to find a balance between having background images that were relevant, but also didn't interfere with the readability of the game. While the backgrounds do still have a lot going on, they load last to give the main game loading priority and the overlaying textboxes are fully opaque to give focus.
 
 ## 7 Deployment
 
 ***
 
 - Sign in to the [GitHub](https://github.com/) website. Go to list of repositories.
-- In the github repository section find "the-sealiest-game-you-will-play-today"
+- In the github repository section find "the-sealiest-game-you-will-play-today".
 - Go to the settings tab located in the menu running across the top of the repository, denoted by a cog icon.
 - Click 'Pages' in the navbar on the left.
-- Swap source branch from none to master
-- Press the save button
+- Swap source branch from none to master.
+- Press the save button.
 - Wait a few minutes while your page is being built.
 - A highlighted banner should be displayed on the page saying "Your site is published at <https://hartnetl.github.io/the-sealiest-game-you-will-play-today/> " with a tick icon to the left of it.
-- The site is now live.
+- The site is now live and changes pushed to the master branch will automatically take effect.
 
 ## 8 Credits
 
@@ -320,7 +325,7 @@ kevinVG207
 
 ### Code for things I didn't know how to do
 
-Youtube tutorial  
+Changing text in main box and option buttons with JS
 Build A Text Adventure Game With JavaScript - Web Dev Simplified  
 <https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js>  
 
