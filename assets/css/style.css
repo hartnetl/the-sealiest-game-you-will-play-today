@@ -82,7 +82,7 @@ h2 {
 
 /* Score box on landing page */
 #last-scores {
-    display: block;
+    display: flex;
     margin: 0 auto;
     box-shadow: 2px 2px 3px 3px #d18781;
     width: 40vw;
@@ -90,12 +90,9 @@ h2 {
     border-radius: 5px;
     color: #aa4465;
     font-size: 1.5rem;
-    padding: 1% 15vw;
+    padding: 1% 0;
     margin-top: 5%;
-}
-
-#last-scores span {
-    margin: 0 5%;
+    justify-content: space-around;
 }
 
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
@@ -160,12 +157,12 @@ h2 {
     margin: 5vh auto 2vh auto;
     background-color: rgb(147, 225, 216);
     border-radius: 10px;
-    width: 80vw;
+    width: 70vw;
     height: 30vh;
     padding: 2.5vh 2.5vw;
     box-shadow: 5px 3px 5px 5px rgba(37, 37, 36, 0.4);
     color: #aa4465;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 /* Set my option buttons in one column */
@@ -176,7 +173,7 @@ h2 {
 
 /* style the buttons */
 .btn {
-    width: 85vw;
+    width: 75vw;
     margin: 1% auto;
     font-size: 1rem;
     border-radius: 10px;
@@ -186,9 +183,13 @@ h2 {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #462255;
+    box-shadow: 5px 5px 5px 5px #2d1636;
+}
+
 /* Style the score box */
 #scores {
-    display: block;
     position: fixed;
     bottom: 0%;
     margin: 0 auto;
@@ -198,15 +199,16 @@ h2 {
     padding-top: 1%;
 }
 
-/* Space out the scores */
-.count {
-    margin-left: 30%;
+#scores span {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 /* The button to clear scores */
 #clear {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1% auto;
     background-color: rgba(70, 34, 85, 0);
     color: #462255;
 }
@@ -414,4 +416,8 @@ h2 {
         height: auto;
         margin-top: 5%;
    }
+
+   .btn {
+    font-size: 1rem;
+}
 } 
