@@ -270,7 +270,9 @@ I played through the game myself repeatedly and no console log errors were prese
 | Scenario change      |  When user clicks an option, the scenario changes to the appropriate follow-up scenario.          |   :heavy_check_mark:  |
 | Win response         |   When user clicks a winning option, a happy jingle sounds and win score is incremented by 1.     |   :heavy_check_mark:  |
 | Lose response        |  When user clicks a losing option, a low buzzer sounds and lose score is incremented by 1.        |   :heavy_check_mark:  |
-| Background change    |   Every time an option is picked, the background changes to match the scenario.                   |   :heavy_check_mark:  |
+| Background change    |   Every time an option is picked, the background changes to match the scenario.                   |   :heavy_check_mark:  |  
+
+<br>
 
 ## 6 Bugs
 
@@ -308,6 +310,28 @@ Using background images can make a page seem busy and make text hard to read. I 
 - A highlighted banner should be displayed on the page saying "Your site is published at <https://hartnetl.github.io/the-sealiest-game-you-will-play-today/> " with a tick icon to the left of it.
 - The site is now live and changes pushed to the master branch will automatically take effect.
 
+### Forking this repository
+
+Forking a repository allows you to have a copy of this code which you can alter freely.
+
+- Sign in to [GitHub](https://github.com/). 
+- Find the repository you want to fork, in this case "the-sealiest-game-you-will-play-today", found [here](https://github.com/hartnetl/the-sealiest-game-you-will-play-today).
+- On the right hand side is a button called 'fork'. Click this.
+- A copy of this repo should be visible in your own repo section.
+
+### Local cloning
+
+Local cloning allows you to edit a copy of the code on your machine.
+
+- Log into [GitHub](https://github.com/).
+- Find the repository you want to clone, in this case "the-sealiest-game-you-will-play-today", found [here](https://github.com/hartnetl/the-sealiest-game-you-will-play-today).
+- To the left of the big green 'Gitpod' button, click the 'Code' dropdown menu.
+- Copy the HTTPS or SSH address as required.
+- Open Git Bash.
+- Set up your new directory.
+- Type "git clone the_SSH_or_https_address".
+- Hit enter and the code will be cloned.
+
 ## 8 Credits
 
 ***
@@ -336,7 +360,10 @@ Modal help
 <https://www.w3schools.com/howto/howto_css_modals.asp>  
 
 Play sounds  
-<https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js>  
+<https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js> 
+
+Markdown table
+<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables>
 
 
 ## 9 Acknowledgements
