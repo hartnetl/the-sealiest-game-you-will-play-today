@@ -519,10 +519,10 @@ let scenarios = [
     {
         id: 29,
         background: "url('assets/images/exit-win.png')",
-        message: "Well done! You made it to the end! Now to find a way out. Think you can manage?",
+        message: "Well done! You made it to the end. Now to find a way out! Think you can manage?",
         response: [
             {
-                option: "I could, but this is GroundHog day so I won't",
+                option: "I could, but this is GroundHog day so I won't. RESTART!",
                 goTo: 'intro',
             },
         ],
