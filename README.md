@@ -8,6 +8,8 @@ Live site: [ZOOQUEST](https://hartnetl.github.io/the-sealiest-game-you-will-play
 
 Project Aim: Use vanilla JavaScript to build a text adventure game
 
+![Am I responsive snapshot](assets/readme-files/amiresponsive.png)
+
 'ZOOQUEST' is a fun text-based adventure game. As a player you will be presented with different scenarios and a couple of ways to respond.   
 The story will take you through, as I'm sure you guessed, a day at the zoo. But be warned, while a day at the zoo seems nice and relaxing, danger lurks just around the corner...
 
@@ -110,7 +112,7 @@ The game has a simple layout, with simple styling to match. The backgrounds are 
 
 #### Colours
 
-![Colour palette used](assets/images/readme-files/colours.png)
+![Colour palette used](assets/readme-files/colours.png)
 
 The game was mostly styled using this colour palette found on [coolers.co](https://coolors.co/ddfff7-93e1d8-ffa69e-aa4465-462255).
 It's a fun, warm palette with a nice level of contrast with colours.
