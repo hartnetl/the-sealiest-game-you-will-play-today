@@ -246,16 +246,20 @@ Configure setting were changed to accept ES6 Javascript features
 index.html results are [here](assets/readme-files/wave-index.png). No errors were returned and no contrast issues were detected. There was an aria alert as this page doesn't have a header, footer etc as it is not a standard web page.  
 game.html results are [here](assets/readme-files/wave-game.png). No errors or contrast error were returned. There is no alert for this page as it has a defined header and footer. 
 
-
 ### 5.3 Performance test
 
-- Performance was tested with [lighthouse](https://developers.google.com/web/tools/lighthouse/run) and [webpage test](https://www.webpagetest.org/) 
+- Performance was tested with [lighthouse](https://developers.google.com/web/tools/lighthouse/run) and [webpage test](https://www.webpagetest.org/).  
+Lighthouse desktop results [here](assets/readme-files/lighthouse-desktop.png).  
+Lighthouse mobile results [here](assets/readme-files/lighthouse-mobile.png).  
+Webpagetest results [here](assets/readme-files/webpagetest.png). 
+
 
 ### 5.4 Manual testing
 
-The live link was sent to multiple people for feedback on functionality and design.
+The live link was sent to multiple people for feedback on functionality and design.  
+I played through the game myself repeatedly and no console log errors were present.
 
-- Title logo: Should appear at the top of both pages and on the game page, should redirect to the landing page if clicked.
+- Title logo: Should appear at the top of both pages. On the game page it should redirect to the landing page if clicked. Works as expected
 - Play button: Should bring user to the start of the game.
 - How to play button: Should display instructions on screen for how to play the game. A 'x' button allows user to exit the instructions.
 - Score tally: Should display 0 if never played before or score was reset, and should display previous score so long as user hasn't cleared cache.
@@ -265,6 +269,12 @@ The live link was sent to multiple people for feedback on functionality and desi
 - When user clicks a winning option, a happy jingle sounds and win score is incremented by 1.
 - When user clicks a losing option, a low buzzer sounds and lose score is incremented by 1.
 - Every time an option is picked, the background changes to match the scenario.
+
+| Feature        | Expected outcome           | Does it work?  |
+| ------------- |:-------------:| -----:|
+| Title logo   | Should appear at the top of both pages. On the game page it should redirect to the landing page if clicked. | :heavy_check_mark: |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ## 6 Bugs
 
