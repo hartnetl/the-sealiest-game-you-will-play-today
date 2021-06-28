@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link my CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Link Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!--Favicon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,40 +16,43 @@
     <title>ZOOQUEST</title>
 </head>
 <body>
-
+    <!--Title header -->
     <section id="title">
         <h1> ZOOQUEST </h1>
     </section>
 
+    <!--Main menu buttons -->
     <section id="home-menu">
         <div id="menu-container">
+            <!--'Play' button starts the game -->
             <form method="" action="https://hartnetl.github.io/the-sealiest-game-you-will-play-today/game.html">
-            <!-- <form method="" action="/game.html"> -->
             <button id ="play" class="h-btn">Play</button>
              </form>
+             <!--'How to play' button brings up modal with instructions -->
             <button class="h-btn" id="instructions">How To Play</button>
             <!-- Modals learned at https://www.w3schools.com/howto/howto_css_modals.asp -->
-            <!-- The Modal -->
+            <!-- The Modal container-->
             <div id="helpModal" class="modal">
 
-                <!-- Modal content -->
+                <!-- The content of the modal -->
                 <div class="modal-content">
+                    <!-- This makes an 'x' to exit the modal -->
                     <span id="close">&times;</span>
                     <p>
-                        <strong>Welcome to ________. </strong><br>
+                        <strong>Welcome to ZOOQUEST. </strong><br>
                         The instructions are simple: For each scenario, just pick which option you'd like to do, and follow the story through to the end... Whatever that end may be! <br>
                         There are 4 ways to 'win' and earn a point, but 10 ways to 'lose'.
                         After each win/lose you will return to the start of the day. <br><br>
                         <strong>Feeling competitive?</strong> Screenshot your score and send this game to your friends. I've even included a button 
                         to reset your score, in case you feel the need to hide your shame of losing so many times from your friends.
                         Aren't I nice person? Now go have fun at the zoo!
-
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- The scores box for the landing page -->
     <section id="score-space">
         <div id="last-scores">
             <span class="count">Completed: <span id="last-win">0</span></span>
@@ -54,6 +60,7 @@
         </div>
     </section>
     
+    <!-- Link my "intro.js" javascript file -->
     <script src="assets/js/intro.js"></script>
     
 </body>
