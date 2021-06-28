@@ -254,16 +254,6 @@ h2 {
         font-size: 100px;
     }
 
-    #last-scores {
-        position: fixed;
-        bottom: 5%;
-        left: 15vw;
-    }
-
-    .count {
-        margin: 0 10%;
-    }
-
     .h-btn {
         font-size: 3rem;
         height: 12vh;
@@ -308,9 +298,6 @@ h2 {
 /* media query for smaller tablets - 800px */
 
 @media screen and (max-width: 800px) {
-    .count {
-        margin: 0 7%;
-    }
 
     .modal-content {
         width: 70%;
@@ -341,12 +328,9 @@ h2 {
     }
 
     #last-scores {
-        padding: 1%;
-        width: 74%;
-    }
-    #last-scores span {
-        margin-right: 15%;
-    }
+        width: 50vw;
+        font-size: 1.2rem;
+    } 
 
     #exit {
         font-size: 3rem;
@@ -370,7 +354,7 @@ h2 {
     }
 }
 
-/* media query for standard phone - 380px */
+/* media query for standard phone - 385px */
 
 @media screen and (max-width: 385px) {
     
@@ -390,8 +374,9 @@ h2 {
         font-size: 1rem;
     }
 
-    #last-scores span {
-        margin-right: 10%;
+    #last-scores {
+        font-size: 1.3rem;
+        padding-left: 2%;
     }
 
     #text-box {
@@ -415,9 +400,14 @@ h2 {
     #text-box {
         height: auto;
         margin-top: 5%;
+        font-size: 1.1rem;
    }
 
    .btn {
     font-size: 1rem;
 }
+
+    #last-scores {
+        font-size: 1rem;
+    }
 } 
