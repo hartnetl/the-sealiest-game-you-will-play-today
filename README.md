@@ -41,7 +41,7 @@ The story will take you through, as I'm sure you guessed, a day at the zoo. But 
 ***
 
 Text adventure games have become a fairly niche area of gaming, but with the rise in popularity of text-based games such as Telltale's Walking Dead there's some hope for this genre yet.  
-This game aims to bring nostalgia to those that have played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing and hopefully with that, the incentive to play it over and over until all winning options are found.
+This game aims to bring nostalgia to those that have played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing and hopefully with that, the incentive to play it over and over until all winning options are found. The colourful backgrounds and (in my opinion) fun twists in the story make this game accessible to people young and old.
 
 
 ### 2.1 Strategy
@@ -180,7 +180,7 @@ Each image relates to the scenario, depicting the animal being viewed or the pla
 ### 3.2 Future Features
 
 - A mute button to give player the option to play without sounds.
-At my current level I couldn't find a way to mute my audio using vanilla Javascript, as the audio is initiated  by the user using JavaScript.
+- Stylised dark mode
 - A contact form to allow users to make suggestions on new scenarios, to allow the game to grow.
 
 ## 4 Technologies and Resources Used
@@ -262,7 +262,7 @@ Webpagetest results [here](assets/readme-files/webpagetest.png).
 ### 5.4 Manual testing
 
 The live link was sent to multiple people for feedback on functionality and design.  
-I played through the game myself repeatedly and no console log errors were present.
+I played through the game myself repeatedly in search of errors and improvements.   
 
 | Feature              | Expected outcome                                                                                  | Does it work?  |
 | -------------        |:-------------:                                                                                    | -----:|
@@ -289,6 +289,7 @@ I played through the game myself repeatedly and no console log errors were prese
 - When the new index.html and intro.js files were created, the scores wouldn't display on the home screen. NaN displayed for first time users. Function had to be rewritten to include if statement to check if localStorage had score values, and if not they should be set to 0.
 - When first deployed on the Slack peer review channel the game wasn't playable - a 404 error showed. This turned out to be an issue with my location for the 'action' in my Play button on the home page.
 - During development the HTML + CSS reset a few steps back, so I lost data. I later learned later I was on a separate branch that was closed which caused conflicts when trying to merge. A lesson to keep my workspaces more organised.
+- When playing the game an error message pops up in the console: "Unchecked runtime.lastError: The message port closed before a response was received.". I did some research and learned this was caused by Chrome extensions, and when played in ingonito mode, these errors do not appear.
 
 
 ## Still existing
