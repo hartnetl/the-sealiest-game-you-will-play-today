@@ -39,7 +39,7 @@ html {
 /* Style h2 */
 h2 {
     text-align: center;
-    color: #aa4465;
+    color: #702E41;
 }
 
 /* Set up my home page buttons into a centered column */
@@ -59,16 +59,16 @@ h2 {
     width: 40vw;
     height: 15vh;
     margin: 3% auto;
-    background-color: #aa4465;
+    background-color: #702E41;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #80314a;
-    color: #ffa69e;
+    color: #FFD5D1;
     font-size: 2rem;
 }
 
 /* Style 'a' tag to match buttons */
 .h-btn a {
-    color: #ffa69e;
+    color: #FFD5D1;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -86,9 +86,9 @@ h2 {
     margin: 0 auto;
     box-shadow: 2px 2px 3px 3px #d18781;
     width: 40vw;
-    background-color: #ffa69e;
+    background-color: #FFD5D1;
     border-radius: 5px;
-    color: #aa4465;
+    color: #702E41;
     font-size: 1.5rem;
     padding: 1% 0;
     margin-top: 5%;
@@ -155,13 +155,14 @@ h2 {
 /* The main text box on the page */
 #text-box {
     margin: 5vh auto 2vh auto;
-    background-color: rgb(147, 225, 216);
+    background-color: #D2E5E5;
     border-radius: 10px;
     width: 70vw;
     height: 30vh;
     padding: 2.5vh 2.5vw;
     box-shadow: 5px 3px 5px 5px rgba(37, 37, 36, 0.4);
-    color: #aa4465;
+    border: 2px solid #D2E5E5;
+    color: #702E41;
     font-size: 1.8rem;
 }
 
@@ -178,14 +179,18 @@ h2 {
     font-size: 1rem;
     border-radius: 10px;
     padding: 1%;
-    background-color: rgb(170, 68, 101);
-    color: rgb(147, 225, 216);
+    background-color: #8C183A;
+    box-shadow: 3px 3px 3px 3px #ce4d73;
+    border: 3px solid #ce4d73;
+    color: #BBECE7;
     cursor: pointer;
 }
 
 .btn:hover {
     background-color: #462255;
     box-shadow: 5px 5px 5px 5px #2d1636;
+    border: 3px solid #2d1636;
+
 }
 
 /* Style the score box */
@@ -214,7 +219,7 @@ h2 {
 }
 
 #clear:hover {
-    color: #aa4465;
+    color: #702E41;
     font-weight: bolder;
 }
 
@@ -239,7 +244,7 @@ h2 {
 /* h3 of error page */
 #err-h3 {
     font-size: 2rem;
-    color: #aa4465;
+    color: #702E41;
 }
 
 #err-h3 a {

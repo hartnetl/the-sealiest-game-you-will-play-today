@@ -249,6 +249,8 @@ Configure setting were changed to accept ES6 Javascript features
 index.html results are [here](assets/readme-files/wave-index.png). No errors were returned and no contrast issues were detected. There was an aria alert as this page doesn't have a header, footer etc as it is not a standard web page.  
 game.html results are [here](assets/readme-files/wave-game.png). No errors or contrast error were returned. There is no alert for this page as it has a defined header and footer. 
 
+- Even though there were no contrast errors detected I decided to use the [webaim contrast checker](https://webaim.org/resources/contrastchecker/). The results of this showed my colours weren't contrasted enough and reduced accessibility. I changed the colours slightly, and the results for the home page can be found [here](assets/readme-files/index-contrast.png) and the game page [here](assets/readme-files/game-contrast.png).
+
 ### 5.3 Performance test
 
 - Performance was tested with [lighthouse](https://developers.google.com/web/tools/lighthouse/run) and [webpage test](https://www.webpagetest.org/).  
