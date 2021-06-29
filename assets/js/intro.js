@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp
 // Set variables to access the modal elements
 let modal = document.getElementById("helpModal");
 let btn = document.getElementById("instructions");

@@ -102,7 +102,9 @@ The game will have two pages, with simple styling:
 
 ### 2.4 Skeleton
 
-The game has a very simple, easy-to-follow layout. The background changes to match the scenario being displayed.
+The game has a very simple, easy-to-follow layout with only two pages. The background changes to match the scenario being displayed.
+
+Wireframes were designed for [mobile](assets/readme-files/mobile.png), [tablet](assets/readme-files/tablet.png) and [desktop](assets/readme-files/desktop.png).
 
 ### 2.5 Surface
 
@@ -200,7 +202,7 @@ This project uses vanilla JavaScript, meaning no external frameworks have been u
 ### Programmes and Libraries Used
 
 - [Balsamiq](https://balsamiq.com/tutorials/) used to build framework.
-- [Chrome devtools](https://developer.chrome.com/docs/devtools/) used for finding quick solutions to design issues and visualising the site on different screen sizes for making media queries.
+- [Chrome devtools](https://developer.chrome.com/docs/devtools/) used for finding quick solutions to design issues and visualising the site on different screen sizes for making media queries. The console was used frequently to detect errors and ensure my code was functioning as expected throughout.
 - [Font Awesome](https://fontawesome.com/) used to source social media icons
 - [Git](https://git-scm.com/) used for version control of my site and pushing code to GitHub
 - [GitHub](https://github.com/) the cloud storage system for my projects. The location of this site's repository, and place to deploy site.
@@ -235,7 +237,7 @@ I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https
     - The most recent validation shows no errors, but two warnings regarding sections that lack headings. Details [here](assets/readme-files/game-html-val.png).  
 
 - CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/).  
-No errors were returned [see here](assets/readme-files/css-val.png) but two warnings were raised [see here](assets/readme-files/css-val-warn.png) about my imported stylesheets - these are for the fonts. 
+No errors were returned ([see here](assets/readme-files/css-val.png)) but two warnings were raised ([see here](assets/readme-files/css-val-warn.png)) about my imported stylesheets - these are for the fonts. 
 
 - JavaScript was validated using [JSHint](https://jshint.com/).   
 Configure settings were changed to accept ES6 Javascript features  
