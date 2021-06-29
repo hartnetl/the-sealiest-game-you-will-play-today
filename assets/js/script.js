@@ -154,8 +154,8 @@ function resetScore() {
     displayScores();
 }
 
-// An array to hold all of the scenarios as objects containing the scenario ID, the body text, 
-// options content, next scenario to display ID (goTO), outcome (when needed) and the background image location
+// An array to hold all of the scenarios as objects. Each scenario has a scenario ID, the scenario message which goes in the main text box for the game, a background image link, 
+// and the response options. In these response options is how the player can respond, which scenario the chosen one leads to next, and a win/lose outcome when appropriate.
 
 let scenarios = [
     {
