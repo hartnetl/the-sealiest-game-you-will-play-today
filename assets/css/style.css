@@ -95,6 +95,19 @@ h2 {
     justify-content: space-around;
 }
 
+footer {
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* footer p {
+    display: block;
+    margin: 0 auto;
+} */
+
 /* Modals learned from https://www.w3schools.com/howto/howto_css_modals.asp */
 /* Set up the modal and background */
 .modal {
