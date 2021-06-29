@@ -21,9 +21,11 @@ function runGame() {
     displayScores();
 }
 
-// This game function to call scenarios and options for the game as required
-// was learned from "Web Dev Simplified" on youtube
+// This game function to call scenarios and response options for the game as required
+// was learned and adapted from "Web Dev Simplified" on youtube
 // https://www.youtube.com/watch?v=R1S_NhKkvGA
+
+// Help for getting sounds to play found on https://www.codegrepper.com/code-examples/javascript/how+to+play+sounds+vanilla+js
 
 /**
  * This function brings up each scenario and its associated features as required. 
@@ -113,6 +115,7 @@ function addLoss() {
 }
 
 // A function to store scores in local storage
+// Learned from MDN lesson https://developer.mozilla.org/en-US/docs/Web/API/Storage
 /**
  * Stores the value of 'win' and 'lose' in the html into local storage so players can
  * see their previous score even if page is closed - so long as browser cache isn't cleared
