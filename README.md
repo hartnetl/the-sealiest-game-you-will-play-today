@@ -22,7 +22,7 @@ The story will take you through, as I'm sure you guessed, a day at the zoo. But 
     - [2.4 Skeleton](#24-skeleton)
     - [2.5 Surface](#25-surface)
 3. [Features](#3-Features)
-    - [3.1 Exisiting](#31-existing-features)
+    - [3.1 Existing](#31-existing-features)
     - [3.2 Future](#32-future-features)
 4. [Technologies Used](#4-technologies-and-resources-used)
 5. [Testing](#5-testing)
@@ -40,7 +40,7 @@ The story will take you through, as I'm sure you guessed, a day at the zoo. But 
 
 ***
 
-Text adventure games have become a fairly niche area of gaming, but with the rise in popularity of text based games such as Telltale's Walking Dead there's some hope for this genre yet.  
+Text adventure games have become a fairly niche area of gaming, but with the rise in popularity of text-based games such as Telltale's Walking Dead there's some hope for this genre yet.  
 This game aims to bring nostalgia to those that have played these games in the past, or introduce them to a new generation. The game is easy to play, with a number of ways to gain points for winning and losing and hopefully with that, the incentive to play it over and over until all winning options are found.
 
 
@@ -48,7 +48,7 @@ This game aims to bring nostalgia to those that have played these games in the p
 
 #### User Goals
 
-Users are looking to play a fun text based adventure game, with replayability and some form of competitiveness.
+Users are looking to play a fun text-based adventure game, with replayability and some form of competitiveness.
 
 #### Project goals
 
@@ -64,23 +64,23 @@ The story takes an ordinary day at the zoo and turns it on its head. I want to c
 - Users want to be able to reset the game
 
 - The owners want to make the game easy to understand
-- The owners want to make sure game isn't too complicated
-- The owners want to promote competitiveness to encourage people sharing the game with their friends
+- The owners want to make sure the game isn't too complicated
+- The owners want to promote competitiveness to encourage people to share the game with their friends
 - The owners want to make it clear if each ending counts as a win or loss
 
 ### 2.2 Scope
 
-The aim of this project was to design a project using vanilla JavaScript. I decided to go ahead with a text based adventure game with mutiple outcomes for the player to discover.
+The aim of this project was to design a project using vanilla JavaScript. I decided to go ahead with a text-based adventure game with multiple outcomes for the player to discover.
 
 The features to include:
 
 - Pop-up instructions for how to play the game - JS modal
-- Option to exit the game - 'x' button when clicked will redirect to main page
+- Option to exit the game - 'x' button when clicked will redirect to the main page
 - Score tracker - A JS function to increment score
 - Clear score option - A JS function to set scores to 0
 - Win / lose sound to signal winning and losing options - A JS function to allow sounds to play at appropriate time
-- Change background image to match scenario - Use JS to change bakground and main text
-- Change background image to emphasize win/loss point - A green/red backgrounf for clarity
+- Change background image to match scenario - Use JS to change background and main text
+- Change background image to emphasize win/loss point - A green/red background for clarity
 
 
 ### 2.3 Structure
@@ -102,7 +102,7 @@ The game will have two pages, with simple styling:
 
 ### 2.4 Skeleton
 
-The game has a very simple, easy to follow layout. The background changes to match the scenario being displayed.
+The game has a very simple, easy-to-follow layout. The background changes to match the scenario being displayed.
 
 ### 2.5 Surface
 
@@ -117,13 +117,13 @@ The game has a simple layout, with simple styling to match. The backgrounds are 
 The game was mostly styled using this colour palette found on [coolers.co](https://coolors.co/ddfff7-93e1d8-ffa69e-aa4465-462255).
 It's a fun, warm palette with a nice level of contrast with colours.
 The background images did not follow this colour palette. 
-These included a light blue / lavendar colour for neutral scenarios, navy for night time scenarios, red for options that result in a losing point and green for options that result in a winning point.
-The reason for this change is to relate to the game scenarios, and the red and green background are to emphasize the loss/win for that scenario.
+These included a light blue / lavender colour for neutral scenarios, navy for nighttime scenarios, red for options that result in a losing point and green for options that result in a winning point.
+The reason for this change is to relate to the game scenarios, and the red and green backgrounds are to emphasize the loss/win for that scenario.
 
 #### Fonts
 
 The title font is 'Kirang Haerang'. It is a fun font that's still easy to read. 
-For the main text I chose 'Roboto' as it's an appealing font that's easy to read, and sans-serif fonts are more suitable to people with reading difficulties such as dyslexia.
+For the main text I chose 'Roboto' as it's an appealing font that's easy to read, and sans-serif fonts are more suitable for people with reading difficulties such as dyslexia.
 
 #### Imagery
 
@@ -180,7 +180,7 @@ Each image relates to the scenario, depicting the animal being viewed or the pla
 ### 3.2 Future Features
 
 - A mute button to give player the option to play without sounds.
-At my current level I couldn't find a way to mute my audio using vanilla Javascript, as the audio is initiataed by the user using JavaScript.
+At my current level I couldn't find a way to mute my audio using vanilla Javascript, as the audio is initiated  by the user using JavaScript.
 - A contact form to allow users to make suggestions on new scenarios, to allow the game to grow.
 
 ## 4 Technologies and Resources Used
@@ -238,7 +238,7 @@ I also referenced [w3schools](https://www.w3schools.com/), [stackoverflow](https
 No errors were returned [see here](assets/readme-files/css-val.png) but two warnings were raised [see here](assets/readme-files/css-val-warn.png) about my imported stylesheets - these are for the fonts. 
 
 - JavaScript was validated using [JSHint](https://jshint.com/).   
-Configure setting were changed to accept ES6 Javascript features  
+Configure settings were changed to accept ES6 Javascript features  
     - intro.js first returned minor syntax errors regarding missing or incorrectly placed semi colons. These were fixed and subsequently no errors were returned. Details of latest results [here](assets/readme-files/intro-jshint.png) 
     - script.js first returned minor syntax errors regarding missing or incorrectly placed semi colons. These were fixed and subsequently no errors were returned. Details of latest results [here](assets/readme-files/script-jshint.png) 
 
@@ -247,7 +247,7 @@ Configure setting were changed to accept ES6 Javascript features
 
 - Accessibility of the site was tested with [WAVE (Web Accessibility Evaluation Tool)](https://wave.webaim.org/).  
 index.html results are [here](assets/readme-files/wave-index.png). No errors were returned and no contrast issues were detected. There was an aria alert as this page doesn't have a header, footer etc as it is not a standard web page.  
-game.html results are [here](assets/readme-files/wave-game.png). No errors or contrast error were returned. There is no alert for this page as it has a defined header and footer. 
+game.html results are [here](assets/readme-files/wave-game.png). No errors or contrast errors were returned. There is no alert for this page as it has a defined header and footer. 
 
 - Even though there were no contrast errors detected I decided to use the [webaim contrast checker](https://webaim.org/resources/contrastchecker/). The results of this showed my colours weren't contrasted enough and reduced accessibility. I changed the colours slightly, and the results for the home page can be found [here](assets/readme-files/index-contrast.png) and the game page [here](assets/readme-files/game-contrast.png).
 
@@ -285,13 +285,13 @@ I played through the game myself repeatedly and no console log errors were prese
 
 ## Fixed / solved
 
-- After local storage for scores was implemented, the old score would be displayed on start but when user starts playing the score would reset instead of adding to it. Fixed by moving oldwin/oldLoss variable decalarations into the score functions. 
-- When the new index.html and intro.js files were created, the scores wouldn't display on the home screen. NaN displayed fir first time users. Function had to be rewritten to include if statement to check if localStorage had score values, and if not they should be set to 0.
-- When first deployed on the Slack peer review channel the game wasnt playable - a 404 error showed. This turned out to be an issue with my location for the 'action' in my Play button on the home page.
+- After local storage for scores was implemented, the old score would be displayed on start but when user starts playing the score would reset instead of adding to it. Fixed by moving oldwin/oldLoss variable declarations  into the score functions. 
+- When the new index.html and intro.js files were created, the scores wouldn't display on the home screen. NaN displayed for first time users. Function had to be rewritten to include if statement to check if localStorage had score values, and if not they should be set to 0.
+- When first deployed on the Slack peer review channel the game wasn't playable - a 404 error showed. This turned out to be an issue with my location for the 'action' in my Play button on the home page.
 - During development the HTML + CSS reset a few steps back, so I lost data. I later learned later I was on a separate branch that was closed which caused conflicts when trying to merge. A lesson to keep my workspaces more organised.
 
 
-## Still exisiting
+## Still existing
 
 - I have no reported bugs at this time.
 
@@ -299,7 +299,7 @@ I played through the game myself repeatedly and no console log errors were prese
 
 JavaScript has been a more challenging language to learn in the given time, but one which I enjoyed. The most difficult part of building this game was starting it and getting the first couple of functions in. The more code I wrote the more I began to understand how writing functions worked, and how important their placement was.  
 
-Using background images can make a page seem busy and make text hard to read. I wanted to find a balance between having background images that were relevant, but also didn't interfere with the readability of the game. While the backgrounds do still have a lot going on, they load last to give the main game loading priority and the overlaying textboxes are fully opaque to give focus.
+Using background images can make a page seem busy and make text hard to read. I wanted to find a balance between having background images that were relevant, but also didn't interfere with the readability of the game. While the backgrounds do still have a lot going on, they load last to give the main game loading priority and the overlaying text boxes are fully opaque to give focus.
 
 ## 7 Deployment
 
