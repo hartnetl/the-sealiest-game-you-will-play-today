@@ -9,7 +9,7 @@ let loseSound = new Audio ('assets/sounds/losetone.mp3');
 // Assign variables to background images
 let bgImage = document.getElementById('game-bg');
 
-// Funtion to start the game
+// Function to start the game
 /**
  * Starts the game displaying the intro scenario and the latest score
  * the player had, or 0 if the player is new 
@@ -203,7 +203,7 @@ let scenarios = [
     {
         id: 3,
         background: "url('assets/images/penguins.png')",
-        message: "Huzzah! You found your way in! Maybe this life of crime suits you afterall. You swagger through the zoo when you come across the penguin feeding.The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
+        message: "Huzzah! You found your way in! Maybe this life of crime suits you after all. You swagger through the zoo when you come across the penguin feeding. The zookeeper is very preoccupied feeding the group. You see one to the side. He looks lonely. What do you do:",
         response: [
             {
                 option: "Give the penguin a quick pat for encouragement. He belongs with the other penguins.",
@@ -245,7 +245,7 @@ let scenarios = [
     },
     {
         id: 6,
-        message: "You get chosen, but you get knocked into the water and cannot swim. The sea lions think you're playing a game. You swallow a lot of water before being pulled out. Off to the hosptial you go.",
+        message: "You get chosen, but you get knocked into the water and cannot swim. The sea lions think you're playing a game. You swallow a lot of water before being pulled out. Off to the hospital you go.",
         background: "url('assets/images/water-end.png')",
         response: [
             {
@@ -276,14 +276,14 @@ let scenarios = [
         background: "url('assets/images/gorilla-end.png')",
         response: [
             {
-                option: "Lesson learned. Leave the gorrilas be. Let's try again.",
+                option: "Lesson learned. Leave the gorillas  be. Let's try again.",
                 goTo: 'intro',
             },
         ],
     },
     {
         id: 9,
-        message: "As you take your first bite you feel a hand on your shoulder. They warn you against eating in front of the gorillas. You decide to follow this persons advice, and you and your new friend wander over to the snapping turtle enclosure. They dare you to touch one: ",
+        message: "As you take your first bite you feel a hand on your shoulder. They warn you against eating in front of the gorillas. You decide to follow this person's advice, and you and your new friend wander over to the snapping turtle enclosure. They dare you to touch one: ",
         background: "url('assets/images/turtles.png')",
         response: [
             {
@@ -353,7 +353,7 @@ let scenarios = [
     {
         id: 14,
         background: "url('assets/images/tarantula.png')",
-        message: "You get your coffee and use this new found energy to visit the rest of the animals. Feeling confident from the caffeine boost you ask to hold the tarantula after she was fed.",
+        message: "You get your coffee and use this newfound energy to visit the rest of the animals. Feeling confident from the caffeine boost you ask to hold the tarantula after she was fed.",
         response: [
             {
                 option: "You purposely make her angry while you hold her. You want to be bitten to become the next Spiderman.",
@@ -361,7 +361,7 @@ let scenarios = [
                 goTo: 16,
             },
             {
-                option: "You stay absolutly still, watching with fascination while she crawls around you.",
+                option: "You stay absolutely still, watching with fascination while she crawls around you.",
                 outcome: 'win',
                 goTo: 17,
             }
@@ -373,7 +373,7 @@ let scenarios = [
         message: "The good news is you succeeded in making her mad and she bit you. The bad news is you did not get superpowers or spidey senses, and the reptile keeper just kicked you out.",
         response: [
             {
-                option: "One day a spiderbite will give you powers. Until then, back to the start you go.",
+                option: "One day a spider-bite will give you powers. Until then, back to the start you go.",
                 goTo: 'intro',
             }
         ],
